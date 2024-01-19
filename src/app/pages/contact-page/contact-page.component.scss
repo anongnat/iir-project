@@ -1,0 +1,31 @@
+.app-contact-page{
+    background-color: black;
+    height: 100%;
+    margin-top: -1px;
+    padding-top: 40%;
+}
+
+.box{
+    border: 1px solid white;
+    background-color: white;
+    padding: 150px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.content{
+    position: relative;
+    top: 30%;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }

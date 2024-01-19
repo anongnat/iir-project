@@ -1,0 +1,33 @@
+.about-us {
+    background-color: black;
+    height: 700px;
+    margin-top: -1px;
+}
+.content{
+    top: 30%;
+    position: relative;
+}
+
+
+.user-pic {
+    width: 130px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: white;
+    text-align: justify;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }

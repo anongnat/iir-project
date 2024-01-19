@@ -1,0 +1,31 @@
+.reel {
+    background-color: black;
+    height: calc(100% + 800%);
+    margin-top: -1px;
+}
+
+h3{
+    text-align: center;
+}
+
+.content{
+    position: relative;
+    top: 30%;
+}
+
+.pic{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }

@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+}
+
+.app-nav-bar{
+    display: none;
+    &.test{
+        display: contents;
+    }
+}
