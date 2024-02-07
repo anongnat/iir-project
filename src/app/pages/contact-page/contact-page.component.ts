@@ -8,7 +8,7 @@ import { WINDOW } from 'src/app/services/window.service';
 })
 export class ContactPageComponent {
   constructor(@Inject(WINDOW) private window: Window) {
-    this.window.addEventListener("scroll", this.reveal);
+    //this.window.addEventListener("scroll", this.reveal);
   }
 
   reveal() {

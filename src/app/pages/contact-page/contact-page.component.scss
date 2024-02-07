@@ -1,8 +1,7 @@
 .app-contact-page{
     background-color: black;
-    height: 100%;
+    height: 100vh;
     margin-top: -1px;
-    padding-top: 40%;
 }
 
 .box{
@@ -15,17 +14,5 @@
 
 .content{
     position: relative;
-    top: 30%;
+    top: 10%;
 }
-
-.reveal{
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 1s all ease;
-  }
-  
-  .reveal.active{
-    transform: translateY(0);
-    opacity: 1;
-  }

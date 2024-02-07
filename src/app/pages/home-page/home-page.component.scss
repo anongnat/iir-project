@@ -1,4 +1,4 @@
-h1{
+h1 {
     position: absolute;
     inset: 0px;
     background-size: auto;
@@ -9,15 +9,31 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    color:white;
+    color: white;
     font-size: 100px;
+    z-index: 1;
+}
+
+.text-center {
+    position: absolute;
+    inset: 0px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    will-change: transform;
+    width: 100%;
+    transform: translate3d(0px, 90px, 0px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 60px;
     z-index: 1;
 }
 
 .wrapper {
     overflow: hidden;
     max-width: 100%;
- }
+}
 
 .frame-container {
     overflow: hidden;
@@ -28,22 +44,132 @@ h1{
 }
 
 .frame-container iframe {
-     width: 300%;
-     margin-left: -100%;
-     height: 1176px;
-     transform: translate3d(0px, 0px, 0px);
-     margin-top: -148px;
+    width: 300%;
+    margin-left: -100%;
+    height: 1176px;
+    transform: translate3d(0px, 0px, 0px);
+    margin-top: -148px;
 }
+
+.test {
+    fill: white;
+    position: absolute;
+    inset: 0px;
+    width: 100%;
+    display: flex;
+
+}
+
+.about-us {
+    background-color: black;
+    margin-top: -1px;
+    height: 500px;
+
+    .content {
+        top: 37%;
+        position: relative;
+    }
+
+
+    .user-pic {
+        width: 130px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: white;
+        text-align: justify;
+    }
+
+    .reveal {
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: 1s all ease;
+    }
+
+    .reveal.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    //   .reverse{
+    //     transform: translateY(0);
+    //     opacity: 1;
+    //   }
+
+    //   .reverse.active{
+    //     position: relative;
+    //     transform: translateY(150px);
+    //     opacity: 0;
+    //     transition: 1s all ease;
+    //   }
+}
+
+
+.reel {
+    background-color: black;
+    height: 500px;
+    margin-top: -1px;
+
+    h3 {
+        text-align: center;
+    }
+
+    .content {
+        position: relative;
+
+    }
+
+    .pic {
+        margin-bottom: 10px;
+        text-align: center;
+        margin: 0;
+        flex: 0 0 0% !important;
+        padding-right: 0 !IMPORTANT;
+        padding-left: 0 !important;
+    }
+
+    .reveal {
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: 1s all ease;
+    }
+
+    .reveal.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.service {
+    .reveal {
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: 1s all ease;
+    }
+
+    .reveal.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
 
 
 @media only screen and (max-width: 600px) {
     .frame-container iframe {
         width: 656%;
-   }
-  }
+    }
+}
 
-  @media only screen and (max-width: 318px) {
+@media only screen and (max-width: 318px) {
     .frame-container iframe {
         width: 890%;
-   }
-  }
+    }
+}
