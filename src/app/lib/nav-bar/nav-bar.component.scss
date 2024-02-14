@@ -1,10 +1,10 @@
 .topnav {
     overflow: hidden;
     position: sticky;
-    backdrop-filter: blur(10px);
+    // backdrop-filter: blur(10px);
     inset: 0;
     z-index: 1;
-    background-color: black;
+    // background-color: black;
     .main{
         float: left;
     }
@@ -14,11 +14,6 @@
         .svg-bar{
             fill: white;
         }
-
-        .inactive{
-            //display: flex;
-        }
-
     }
 }
 
@@ -26,7 +21,7 @@
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px;
     text-decoration: none;
     font-size: 26px;
     font-family: Thonburi Bold;
@@ -43,7 +38,7 @@
     width: 20%;
     left: 0;
     position: relative;
-    margin-left: 0;
+    margin-left: -30px;
     margin-top: -6px;
     display: flex;
 }

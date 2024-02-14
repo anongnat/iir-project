@@ -4,7 +4,20 @@ body{
 
 .app-nav-bar{
     display: none;
+    background-color: black;
     &.test{
         display: contents;
+    }
+
+    &.reveal {
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: 1s all ease;
+    }
+
+    .reveal.active {
+        transform: translateY(0);
+        opacity: 1;
     }
 }

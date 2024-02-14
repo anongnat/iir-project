@@ -6,14 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent {
+  displaySquare = true;
 
-  constructor(){
+  constructor() {
   }
 
-  toggleButton(event : any) {
-    console.log(event.currentTarget,event.currentTarget.attributes);
-    //console.log(document.getElementsByClassName("svg-square"))
-    document.getElementsByClassName("svg-square");
+  toggleButton(event: any) {
+    console.log(event.currentTarget);
+    if(event.currentTarget.classList.contains('svg-square')){
+      this.displaySquare = false;
+    }else{
+      this.displaySquare = true;
+    }
+    console.log(this.displaySquare);
   }
 
 }
