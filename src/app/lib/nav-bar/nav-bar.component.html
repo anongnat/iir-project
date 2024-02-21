@@ -1,7 +1,7 @@
-<nav class="topnav backdrop-blur-sm col-sm">
+<nav class="topnav col-sm {{from}}">
     <div class="main">
         <a class="active" href="#">
-            <img src="../assets/picture/Logo_01_white_Nobackground.png" width="150" height="150" style="margin-top: -9px;">
+            <img src="../assets/picture/Logo_01_white_Nobackground.png" width="120" height="120" style="margin-top: -9px;">
         </a>
     </div>
     <div class="second">
@@ -9,11 +9,12 @@
         <a href="/about-us"  style="margin-top: 26px;" *ngIf="!displaySquare">ABOUT US</a>
         <a href="/reel" style="margin-top: 26px;" *ngIf="!displaySquare">REEL</a>
         <a href="/contact" style="margin-top: 26px;" *ngIf="!displaySquare">CONTACT</a>
-        <a (click)="toggleButton($event)" class="svg-square" *ngIf="displaySquare">
-            <svg xmlns="http://www.w3.org/2000/svg"  class="active svg-square" style="fill: white; margin-top: 8px;" width="100" height="100" viewBox="0 0 512 512">!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.<path d="M0 0H512V512H0V0z"/></svg>
+        <a (click)="toggleButton($event)" class="svg-square {{displaySquare ? 'toggled' : ''}}" *ngIf="displaySquare">
+            <svg xmlns="http://www.w3.org/2000/svg"  class="active svg-square" style="fill: white; margin-top: 3px;" width="80" height="80" viewBox="0 0 512 512">!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.<path d="M0 0H512V512H0V0z"/></svg>
         </a>
-        <a (click)="toggleButton($event)" class="cube-open" *ngIf="!displaySquare">
-            <img  src="../assets/picture/Logo_03_white_nobackground.png" class="cube-open" width="150" height="150" style="margin-top: -28px;">
+        <a (click)="toggleButton($event)" class="cube-open {{!displaySquare ? 'toggled' : ''}}" *ngIf="!displaySquare" style="margin-left: -26px;
+    ">
+            <img  src="../assets/picture/Logo_03_white_nobackground.png" class="cube-open" width="130" height="100" style="margin-top: -5px;">
         </a>
     </div>
 </nav>

@@ -1,8 +1,8 @@
 <div class="home">
-    <!-- <app-nav-bar class="app-nav-bar" style="z-index: 1;"></app-nav-bar> -->
+    <!-- <app-nav-bar class="app-nav-bar" [from]="'home-page'" style="z-index: 1;"></app-nav-bar> -->
     <div class="frame-container">
-        <h1 style="text-align: center;">II RONIN<br></h1>
-        <p class="text-center">十一浪人</p>
+        <app-nav-bar class="app-nav-bar" [from]="'home-page'" style="z-index: 1; background: transparent;"></app-nav-bar>
+        <p class="text-center"><img width="50%" height="50%" src="../assets/picture/Logo_02_white_nobackground.png"></p>
         <p class="text-center v-text">V</p>
         <iframe class="e2e-iframe-trusted-src" width="100%" scrolling="no" [src]="url" frameborder="0" allowfullscreen
             allow="autoplay; encrypted-media"></iframe>
@@ -12,7 +12,7 @@
         <div class="container content reveal">
             <div class="row">
                 <div class="col-sm">
-                    <p style="font-size: 33px; font-family: Thonburi Bold; letter-spacing: 2px;"> 
+                    <p style="font-size: 33px; font-family: Thonburi Bold; letter-spacing: 2px;">
                         At 11 RONIN we create performances through the<br>
                         art of animation for CG character and creatures.<br>
                         Our team is experienced in producing high quality<br>
@@ -25,64 +25,60 @@
         </div>
     </div>
 
-    <div class="reel" style="padding-top: 200px;">
+    <div class="reel">
         <div class="container content reveal">
             <div class="row">
-                <h3 style="color: white; font-size: 40px; font-family: Thonburi Bold;"> Project's we've worked on</h3>
+                <h3 class="reel-title"> Project's we've worked on</h3>
             </div>
-            <div class="row" style="display: flex;
-            position: relative;
-            margin-left: -92px; width: 1480px;;">
-                <div class="col-sm pic">
-                    <img width="295px" height="100%" src="../assets/picture/IMG_0168.jpeg">
+            <div class="row all-pic">
+                <div class="col-lg-3 col-md-5 col-sm-2 pic">
+                    <img src="../assets/picture/IMG_0168.jpeg">
                 </div>
-                <div class="col-sm pic">
-                    <img width="295px" height="100%"
-                    src="../assets/picture/IMG_0169.jpeg">
+                <div class="col-lg-3 col-md-5 col-sm-2 pic">
+                    <img src="../assets/picture/IMG_0169.jpeg">
                 </div>
-                <div class="col-sm pic">
-                    <img width="295px" height="100%"
-                    src="../assets/picture/IMG_0173.jpeg">
+                <div class="col-lg-3 col-md-5 col-sm-2 pic">
+                    <img src="../assets/picture/IMG_0173.jpeg">
                 </div>
-                <div class="col-sm pic">
-                    <img width="295px" height="100%"  src="../assets/picture/IMG_0172.jpeg">
+                <div class="col-lg-3 col-md-5 col-sm-2 pic">
+                    <img src="../assets/picture/IMG_0172.jpeg">
                 </div>
-                <div class="col-sm pic">
-                    <img width="295px" height="100%"
-                    src="../assets/picture/IMG_0175.jpeg">
+                <div class="col-lg-3 col-md-5 col-sm-2 pic">
+                    <img src="../assets/picture/IMG_0175.jpeg">
                 </div>
             </div>
-            <div class="row" style="margin-top: 20px;">
-                <div><p style="color: white; text-align: center; font-size: 66px; font-family: Thonburi Bold; line-height: 0.6;">II RONIN </p><br>
-                    <p style="color: white; text-align: center; font-size: 33px; font-family: Thonburi Bold; line-height: 0.1;">十一浪人</p></div>
+            <div class="row" style=" text-align: center;">
+                <div>
+                    <img width="295px" height="100%" src="../assets/picture/Logo_02_white_nobackground.png">
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="service" style="background-color: black; padding-bottom: 50px; padding-top: 520px;">
+    <div class="service">
         <div class="container content reveal">
-            <p style="color: white; font-size: 80px; font-family: Thonburi Bold; text-align: center;">SERVICES</p>
+            <p class="service-title">SERVICES</p>
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-1 pic" style="text-align: center;">
-                  <p style="color: white; font-size: 53px; font-family: Thonburi Bold;">Previs</p>
-                  <p style="color: white; font-size: 26px; font-family: Thonburi Bold;">Staging<br>Camera<br>Performance</p>
+                <div class="col-lg-4 col-md-4 col-sm-1 pic">
+                    <p style="color: white; font-size: 53px; font-family: Thonburi Bold;">Previs</p>
+                    <p style="color: white; font-size: 26px; font-family: Thonburi Bold;">
+                        Staging<br>Camera<br>Performance</p>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-2 pic" style="text-align: center;">
                     <p style="color: white; font-size: 53px; font-family: Thonburi Bold;">Animation</p>
-                    <video width="320" height="240" autoplay loop muted>
+                    <video autoplay="true" width="320" height="240" loop  muted>
                         <source src="../assets/video/Bouncing_ball.mp4" type="video/mp4">
-                      </video>
-                      <p style="color: white; font-size: 26px; font-family: Thonburi Bold; margin-top: -70px;">Keyframe<br>Character<br>Creature<br>Stylized<br>Realistic</p>
+                    </video>
+                    <p style="color: white; font-size: 26px; font-family: Thonburi Bold; margin-top: -70px;">
+                        Keyframe<br>Character<br>Creature<br>Stylized<br>Realistic</p>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-2 pic" style="text-align: center;">
                     <p style="color: white; font-size: 53px; font-family: Thonburi Bold;">Software</p>
-                    <img width="200px" height="200px"
-                    src="../assets/picture/Logo_Blender.png">
-                    <img width="200px" height="200px"
-                    src="../assets/picture/Logo_Maya.png">
+                    <img width="200px" height="200px" src="../assets/picture/Logo_Blender.png">
+                    <img width="200px" height="200px" src="../assets/picture/Logo_Maya.png">
                 </div>
             </div>
-   
+
         </div>
     </div>
 </div>

@@ -4,7 +4,12 @@
     // backdrop-filter: blur(10px);
     inset: 0;
     z-index: 1;
-    // background-color: black;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.125) 2%, #000000 80%);
+    margin: 0;
+    height: 100px;
+    &.home-page{
+        background: none !important;
+    }
     .main{
         float: left;
     }
@@ -43,6 +48,30 @@
     display: flex;
 }
 
+// .toggled .cube-open {
+//     height: 5px;
+//     width: 54px;
+//     left: 5px;
+//     top: calc(50% - 2px);
+//     transform: rotate(-45deg);
+//     background-color: red;
+//   }
+
+// .toggled .cube-open::after {
+//     width: 54px;
+//     height: 5px;
+//     top: -1px;
+//     transform: rotate(-270deg);
+//     background-color: red;
+//   }
+
+// .cube-open, .cube-open::before  {
+//     transform: scale(0);
+//   }
+
+// .cube-open, .cube-open::after {
+//     transition: all 0.3s linear;
+//   }
 @media only screen and (max-width: 600px) {
 
     .topnav {
