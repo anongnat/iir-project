@@ -49,10 +49,11 @@ h1 {
     width: 100%;
     margin: 0;
     padding: 0;
+    background-color: black;
 
-    .app-nav-bar{
-        z-index: 1; 
-        background: transparent;
+    .bottom {
+        bottom: 170px;
+        right: 50%;
     }
 }
 
@@ -104,7 +105,7 @@ h1 {
         transform: translateY(150px);
         opacity: 0;
         transition: 1s all ease;
-        top: 50%;
+        top: 30%;
     }
 
     .reveal.active {
@@ -152,6 +153,16 @@ h1 {
 
         img {
             width: 295px;
+            height: 95%;
+        }
+    }
+
+    .logo-pic {
+        text-align: center;
+        margin-top: -40px;
+
+        img {
+            width: 360px;
             height: 100%;
         }
     }
@@ -174,12 +185,15 @@ h1 {
     padding-bottom: 50px;
     padding-top: 540px;
 
-    .pic{
+    .pic {
         text-align: center;
     }
 
-    .service-title{
-        color: white; font-size: 60px; font-family: Thonburi Bold; text-align: center;
+    .service-title {
+        color: white;
+        font-size: 60px;
+        font-family: Thonburi Bold;
+        text-align: center;
     }
 
     .reveal {
@@ -199,11 +213,13 @@ h1 {
 
 @media only screen and (max-width: 1440px) {
     .reel {
-        .pic {
+        // .all-pic {
+        //     margin-left: 27px;
+        // }
 
+        .pic {
             img {
-                width: 200px;
-                //height: 100%;
+                width: 250px;
             }
         }
     }

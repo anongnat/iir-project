@@ -11,7 +11,7 @@ export class ReelsPageComponent {
   url: any = '';
   private sanitizer = inject(DomSanitizer);
   constructor(@Inject(WINDOW) private window: Window) {
-    this.url = this.sanitizer.bypassSecurityTrustResourceUrl('https://player.vimeo.com/video/910842295?&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1&#t=235s');
+    this.url = this.sanitizer.bypassSecurityTrustResourceUrl('https://player.vimeo.com/video/910842295?autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1&#t=235s&controls=0');
     //this.window.addEventListener("scroll", this.reveal);
   }
 

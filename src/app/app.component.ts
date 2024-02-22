@@ -25,10 +25,10 @@ export class AppComponent {
   onWindowScroll() {
     const offset = this.window.pageYOffset || this.document.documentElement.scrollTop || this.document.body.scrollTop || 0;
     let elements = this.elem.nativeElement.querySelectorAll('.app-nav-bar');
-    if(offset > 799){
-      elements[0].classList.add('test');
+    if(offset > 200){
+      elements[0].firstChild.classList.remove('home-page');
     }else{
-      elements[0].classList.remove('test');
+      elements[0].firstChild.classList.add('home-page');
     }
   }
 
