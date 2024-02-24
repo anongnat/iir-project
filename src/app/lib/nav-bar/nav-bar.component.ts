@@ -14,12 +14,20 @@ export class NavBarComponent {
   }
 
   toggleButton(event: any) {
-    console.log(event.currentTarget);
+    console.log(event.currentTarget, document.getElementsByClassName("conditionalText")[0],document.getElementsByClassName("right")[0]);
     if(event.currentTarget.classList.contains('svg-square')){
       this.displaySquare = false;
     }else{
       this.displaySquare = true;
     }
+
+    // if(document.getElementsByClassName("condition-left")[0] != undefined){
+    //   document.getElementsByClassName("condition-left")[0].classList.add('condition-right');
+    //   document.getElementsByClassName("condition-left")[0].classList.remove('condition-left');
+    // }else{
+    //   document.getElementsByClassName("condition-right")[0].classList.add('condition-left');
+    //   document.getElementsByClassName("condition-right")[0].classList.remove('condition-right');
+    // }
     console.log(this.displaySquare);
   }
 
