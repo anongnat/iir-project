@@ -86,6 +86,12 @@ h1 {
     .content {
         top: 37%;
         position: relative;
+
+        .about-us-text {
+            font-size: 33px;
+            font-family: Thonburi Bold;
+            letter-spacing: 2px;
+        }
     }
 
 
@@ -194,6 +200,12 @@ h1 {
         font-size: 60px;
         font-family: Thonburi Bold;
         text-align: center;
+    }
+
+    .sub-title {
+        color: white;
+        font-size: 53px;
+        font-family: Thonburi Bold;
     }
 
     .reveal {

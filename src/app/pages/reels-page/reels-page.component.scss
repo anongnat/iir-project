@@ -1,6 +1,6 @@
 .reel {
     background-color: black;
-    height: 100vh;
+    height: 80vh;
 }
 
 h3{
@@ -10,13 +10,14 @@ h3{
 .content{
     position: relative;
     top: 20%;
-    .logo-pic{
-        text-align: center;
-        margin-top: -40px;
-        img{
-            width:360px;
-            height:100%;
-        }
+    
+}
+
+.logo-pic{
+    text-align: center;
+    img{
+        width:360px;
+        height:100%;
     }
 }
 

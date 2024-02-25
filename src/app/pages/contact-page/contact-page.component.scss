@@ -1,6 +1,6 @@
 .app-contact-page {
     background-color: black;
-    height: 100vh;
+    height: 80vh;
 }
 
 .box {
@@ -17,7 +17,6 @@
 
 .logo-pic {
     text-align: center;
-    margin-top: -40px;
 
     img {
         width: 360px;
@@ -27,7 +26,7 @@
 
 .container {
     position: relative;
-    top: 15%;
+    top: 25%;
 
     &.logo-page {
         margin-top: 50px;
