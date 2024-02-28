@@ -16,7 +16,7 @@ import { WINDOW_PROVIDERS } from "./services/window.service";
     ReelsPageComponent,
     ContactPageComponent,
     AboutUsPageComponent,
-    NavBarComponent
+    NavBarComponent,
   ],
   imports: [
     BrowserModule,

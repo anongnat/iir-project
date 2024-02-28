@@ -5,7 +5,7 @@
 
 .content {
     position: relative;
-    top:25%;
+    top:21%;
 }
 
 
@@ -19,7 +19,22 @@
     margin-left: 85px;
 }
 
+.about-us-text{
+    font-size: 26px; font-family: Thonburi Bold; text-align: center;
+}
+
 p {
     color: white;
     text-align: justify;
+}
+
+footer {
+    background-color: black;
+    margin-top: 36px;
+    .copyright-text{
+        color: white;
+        font-size: 16px;
+        text-align: right;
+        font-family: Thonburi Bold;
+    }
 }

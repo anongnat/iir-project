@@ -1,4 +1,4 @@
-import { Component, Inject, inject } from '@angular/core';
+import { Component, Inject, ViewChild, inject } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { WINDOW } from 'src/app/services/window.service';
 
@@ -13,6 +13,8 @@ export class ReelsPageComponent {
   constructor(@Inject(WINDOW) private window: Window) {
     this.url = this.sanitizer.bypassSecurityTrustResourceUrl('https://player.vimeo.com/video/910842295?autoplay=1&loop=1');
     //this.window.addEventListener("scroll", this.reveal);
+    // const video: HTMLVideoElement = this.videoElement.nativeElement;
+    // video.play();
   }
 
   reveal() {

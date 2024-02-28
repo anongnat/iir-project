@@ -52,8 +52,26 @@ h1 {
     background-color: black;
 
     .bottom {
-        bottom: 170px;
+        bottom: 0;
         right: 50%;
+        position: relative;
+        display: flex;
+        left: 0;
+        top: 49%;
+    }
+}
+
+.frame-container {
+    .video-home {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        // margin-top: -87px;
+        transform-origin: 50% 50%;
     }
 }
 
@@ -67,6 +85,7 @@ h1 {
     height: 100%;
     margin-top: -87px;
     transform-origin: 50% 50%;
+
 }
 
 .test {
@@ -78,10 +97,33 @@ h1 {
 
 }
 
+footer {
+    background-color: black;
+    margin-top: -160px;
+
+    .logo-pic {
+        text-align: center;
+
+        img {
+            width: 360px;
+            height: 100%;
+        }
+    }
+
+    .copyright-text {
+        color: white;
+        font-size: 16px;
+        text-align: right;
+        font-family: Thonburi Bold;
+    }
+}
+
+
+
 .about-us {
     background-color: black;
     margin-top: -2px;
-    height: 500px;
+    height: 700px;
 
     .content {
         top: 37%;
@@ -122,10 +164,10 @@ h1 {
 
 
 .reel {
-    background-color: black;
-    height: 500px;
-    padding-top: 150px;
-    margin-top: -1px;
+    background-color: gray;
+    height: 100%;
+    // margin-top: -1px;
+    padding: 20px;
 
     h3 {
         text-align: center;
@@ -133,7 +175,6 @@ h1 {
 
     .content {
         position: relative;
-
     }
 
     .reel-title {
@@ -145,8 +186,8 @@ h1 {
     .all-pic {
         display: flex;
         position: relative;
-        margin-left: -92px;
-        width: 1480px;
+        margin-left: -110px;
+        width: 1515px;
     }
 
     .pic {
@@ -158,8 +199,8 @@ h1 {
         padding-left: 0 !important;
 
         img {
-            width: 295px;
-            height: 95%;
+            width: 303px;
+            height: 100%;
         }
     }
 
@@ -188,8 +229,8 @@ h1 {
 
 .service {
     background-color: black;
+    padding-top: 20px;
     padding-bottom: 50px;
-    padding-top: 450px;
 
     .pic {
         text-align: center;
@@ -202,9 +243,17 @@ h1 {
         text-align: center;
     }
 
+    .service-text {
+        color: white;
+        font-size: 33px;
+        font-family: Thonburi Bold;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
     .sub-title {
         color: white;
-        font-size: 53px;
+        font-size: 26px;
         font-family: Thonburi Bold;
     }
 
@@ -221,30 +270,111 @@ h1 {
     }
 }
 
+@media only screen and (max-width: 5120px) {
+    .frame-container {
+        .bottom {
+            top: 84%;
+        }
+    }
+}
+
+@media only screen and (max-width: 2560px) {
+    .frame-container {
+        .bottom {
+            top: 75%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1920px) {
+    .frame-container {
+        .bottom {
+            top: 65%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1680px) {
+    .frame-container {
+        .bottom {
+            top: 49%;
+        }
+    }
+}
 
 
 @media only screen and (max-width: 1440px) {
     .reel {
-        // .all-pic {
-        //     margin-left: 27px;
-        // }
+        .all-pic {
+            margin-left: -72px;
+        }
 
         .pic {
             img {
-                width: 250px;
+                width: 288px;
             }
         }
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .frame-container iframe {
-        width: 656%;
+@media only screen and (max-width: 1024px) {
+    .frame-container {
+        .bottom {
+            top: 40%;
+        }
+    }
+    .reel {
+        .all-pic {
+            margin-left: -43px;
+        }
+
+        .pic {
+            img {
+                width: 205px;
+            }
+        }
     }
 }
 
-@media only screen and (max-width: 318px) {
-    .frame-container iframe {
-        width: 890%;
+@media only screen and (max-width: 768px) {
+    .reel {
+        .all-pic {
+            margin-left: -36px;
+        }
+
+        .pic {
+            img {
+                width: 154px;
+            }
+        }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .reel {
+        .all-pic {
+            margin-left: -36px;
+        }
+
+        .pic {
+            img {
+                width: 154px;
+            }
+        }
+    }
+}
+
+
+
+
+// @media only screen and (max-width: 600px) {
+//     .frame-container iframe {
+//         width: 656%;
+//     }
+// }
+
+// @media only screen and (max-width: 318px) {
+//     .frame-container iframe {
+//         width: 890%;
+//     }
+// }

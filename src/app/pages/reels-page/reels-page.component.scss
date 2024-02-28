@@ -1,6 +1,6 @@
 .reel {
     background-color: black;
-    height: 80vh;
+    height: 100vh;
 }
 
 h3{
@@ -9,7 +9,7 @@ h3{
 
 .content{
     position: relative;
-    top: 20%;
+    top: 15%;
     
 }
 
@@ -26,19 +26,37 @@ h3{
     text-align: center;
 }
 
+.reel-text{
+    color: white;
+    font-size: 20px;
+    font-family: Thonburi Bold;
+    text-align: center;
+}
+
 .frame-container {
     overflow: hidden;
     width: 100%;
-    pointer-events: none;
 }
 
-.frame-container iframe {
-    overflow: hidden;
-    aspect-ratio: 16 / 5;
-    pointer-events: none;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+.frame-container {
+    .video-reel {
+        overflow: hidden;
+        aspect-ratio: 14 / 5;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+footer {
+    background-color: black;
+    margin-top: -25px;
+    .copyright-text{
+        color: white;
+        font-size: 16px;
+        text-align: right;
+        font-family: Thonburi Bold;
+    }
 }
