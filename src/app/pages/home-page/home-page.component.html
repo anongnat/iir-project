@@ -29,24 +29,24 @@
 
     <div class="reel">
         <div class="container content">
-            <div class="row all-pic" [style]="widthScreen">
+            <div class="row all-pic" [ngStyle]="{'width.px': widthScreen}" >
                 <div class="col-lg-3 col-md-5 col-sm-6 pic" >
-                    <img class="first-pic" [style]="widthImg" src="../assets/picture/IMG_0168.jpeg" #mySelector>
+                    <img class="first-pic" [ngStyle]="{'width.px': widthhh}"  src="../assets/picture/IMG_0168.jpeg" #mySelector>
                 </div>
                 <div class="col-lg-3 col-md-5 col-sm-6 pic">
-                    <img [style]="widthImg" src="../assets/picture/IMG_0169.jpeg">
+                    <img [ngStyle]="{'width.px': widthhh}" src="../assets/picture/IMG_0169.jpeg">
                 </div>
                 <div class="col-lg-3 col-md-5 col-sm-6 pic">
-                    <img [style]="widthImg" src="../assets/picture/IMG_0173.jpeg">
+                    <img [ngStyle]="{'width.px': widthhh}" src="../assets/picture/IMG_0173.jpeg">
                 </div>
                 <div class="col-lg-3 col-md-5 col-sm-6 pic">
-                    <img [style]="widthImg" src="../assets/picture/IMG_0172.jpeg">
+                    <img [ngStyle]="{'width.px': widthhh}" src="../assets/picture/IMG_0172.jpeg">
                 </div>
                 <div class="col-lg-3 col-md-5 col-sm-6 pic" *ngIf="checkedSize == 2">
-                    <img [style]="widthImg" src="../assets/picture/IMG_0191.jpeg">
+                    <img [ngStyle]="{'width.px': widthhh}" src="../assets/picture/IMG_0191.jpeg">
                 </div>
                 <div class="col-lg-3 col-md-5 col-sm-6 pic">
-                    <img [style]="widthImg" src="../assets/picture/IMG_0175.jpeg">
+                    <img [ngStyle]="{'width.px': widthhh}" src="../assets/picture/IMG_0175.jpeg">
                 </div>
                
             </div>

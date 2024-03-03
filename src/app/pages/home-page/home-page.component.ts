@@ -18,8 +18,10 @@ export class HomePageComponent {
   currentPosition = 0;
   checkedSize = window.innerWidth < 768 ? 2 : 5;
   reduceHeight = window.innerWidth < 427 ? 24 : 100;
-  widthScreen = "width :" + window.innerWidth + "px;";
+  // widthScreen = "width :" + window.innerWidth + "px;";
   widthImg = "width :" + ((window.innerWidth / this.checkedSize)) + "px;";
+  widthhh = (window.innerWidth / this.checkedSize);
+  widthScreen = window.innerWidth;
   heightScreen = "height:" +  window.innerHeight + "px;";
   bottomSign = "top:" +  (window.innerHeight - this.reduceHeight) + "px;";
   
@@ -27,7 +29,7 @@ export class HomePageComponent {
   constructor(@Inject(WINDOW) private windows: Window) {
     this.url = this.sanitizer.bypassSecurityTrustResourceUrl('https://player.vimeo.com/video/910841514?autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1&#t=235s&controls=0');
     this.windows.addEventListener("scroll", this.reveal);
-    console.log(window.innerWidth);
+    console.log(this.widthScreen,this.widthImg);
     console.log(this.reduceHeight);
   }
 
@@ -57,10 +59,11 @@ export class HomePageComponent {
 
   onResize() {
     this.checkedSize = window.innerWidth < 768 ? 2 : 5;
-    this.widthScreen = "width :" + window.innerWidth + "px;";
+    this.widthScreen = window.innerWidth ;
     this.widthImg = "width :" + ((window.innerWidth / this.checkedSize)) + "px;";
     this.heightScreen = "height:" +  window.innerHeight + "px;";
     this.bottomSign = "top:" +  (window.innerHeight - this.reduceHeight) + "px;";
+    this.widthhh = (window.innerWidth / this.checkedSize);
     console.log(window.innerWidth);
     console.log(this.reduceHeight);
    
