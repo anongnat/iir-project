@@ -29,9 +29,8 @@ export class HomePageComponent {
   constructor(@Inject(WINDOW) private windows: Window) {
     this.url = this.sanitizer.bypassSecurityTrustResourceUrl('https://player.vimeo.com/video/910841514?autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1&#t=235s&controls=0');
     this.windows.addEventListener("scroll", this.reveal);
-    this.onResize();
-    console.log(this.widthScreen,this.widthImg);
-    console.log(this.reduceHeight);
+    // alert(this.widthScreen,);
+    // alert(this.widthImg);
   }
 
   reveal() {
