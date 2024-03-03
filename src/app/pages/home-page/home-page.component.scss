@@ -45,11 +45,15 @@ h1 {
     aspect-ratio: 16/9;
     pointer-events: none;
     position: relative;
-    height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
     background-color: black;
+
+    img{
+        width: 680px;
+        height: 400px;
+    }
 
     .bottom {
         bottom: 0;
@@ -57,18 +61,15 @@ h1 {
         position: relative;
         display: flex;
         left: 0;
-        top: 49%;
+        top: 51%;
     }
 
     .video-home {
         position: absolute;
-        top: 0;
-        left: 0;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-        transform-origin: 50% 50%;
+        width: 270%;
+        margin-left: -70%;
+        height: 1215px;
+        margin-top: -186px;
     }
 }
 
@@ -107,7 +108,6 @@ footer {
 .about-us {
     background-color: black;
     margin-top: -2px;
-    height: 800px;
 
     .content {
         top: 37%;
@@ -231,6 +231,18 @@ footer {
         .bottom {
             top: 84%;
         }
+        .video-home{
+            position: absolute;
+            width: 301%;
+            margin-left: -101%;
+            height: 3840px;
+            margin-top: -472px
+        }
+    }
+    .reel {
+        .all-pic {
+            margin-left: -1913px;
+        }
     }
 }
 
@@ -238,6 +250,14 @@ footer {
     .frame-container {
         .bottom {
             top: 75%;
+        }
+
+        .video-home {
+            position: absolute;
+            width: 385%;
+            margin-left: -138%;
+            height: 2200px;
+            margin-top: -284px;
         }
     }
 
@@ -251,7 +271,13 @@ footer {
 @media only screen and (max-width: 1920px) {
     .frame-container {
         .bottom {
-            top: 65%;
+            top: 70%;
+        }
+    }
+
+    .reel {
+        .all-pic {
+            margin-left: -330px;
         }
     }
 }
@@ -259,7 +285,36 @@ footer {
 @media only screen and (max-width: 1680px) {
     .frame-container {
         .bottom {
-            top: 49%;
+            top: 69%;
+        }
+    }
+
+    .reel {
+        .all-pic {
+            margin-left: -192px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1440px) {
+    .frame-container {
+        .bottom {
+            top: 63%;
+        }
+    }
+
+    .reel {
+        .all-pic {
+            margin-left: -72px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1367px) {
+    .frame-container {
+        .bottom {
+            top: 58%;
         }
     }
 
@@ -270,19 +325,10 @@ footer {
     }
 }
 
-
-@media only screen and (max-width: 1440px) {
-    .reel {
-        .all-pic {
-            margin-left: -72px;
-        }
-    }
-}
-
 @media only screen and (max-width: 1024px) {
     .frame-container {
         .bottom {
-            top: 46%;
+            top: 58%;
 
             .text-center {
                 font-size: 40px;
@@ -303,20 +349,45 @@ footer {
     }
 }
 
+@media only screen and (max-width: 811px) {
+    .frame-container {
+        .bottom {
+            top: 58%;
+        }
+    }
+
+    .reel {
+        .all-pic {
+            margin-left: -125px;
+        }
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .frame-container {
         .bottom {
-            top: 29%;
+            top: 68%;
 
             .text-center {
                 font-size: 40px;
             }
         }
+
+        .video-home{
+            position: absolute;
+            width: 385%;
+            margin-left: -138%;
+            height: 1380px;
+            margin-top: -180px;
+        }
+
+        img{
+            width: 580px;
+            height: 300px;
+        }
     }
 
     .about-us {
-        height: 700px;
-
         .content {
             .about-us-text {
                 font-size: 24px;
@@ -343,7 +414,6 @@ footer {
 
 @media only screen and (max-width: 426px) {
     .frame-container {
-        height: 650px;
         .bottom {
             top: 54%;
 

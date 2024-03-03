@@ -1,16 +1,16 @@
 <div class="home">
     <app-nav-bar class="app-nav-bar" [from]="'home-page'"></app-nav-bar>
-    <div class="frame-container">
+    <div class="frame-container" [style]="heightScreen">
         <p class="text-center"><img width="50%" height="50%" src="../assets/picture/Logo_02_white_nobackground.png"></p>
         <div class="bottom">
             <p class="text-center v-text">V</p>
         </div>
-        <video [muted]="'muted'" loop autoplay width="100%" class="video-home">
+        <video [muted]="'muted'" width="100%" class="video-home" autobuffer autoplay loop>
             <source src="../assets/video/Home_Page.mp4" type="video/mp4">
         </video>
     </div>
 
-    <div class="about-us">
+    <div class="about-us" [style]="heightScreen">
         <div class="container content reveal">
             <div class="row">
                 <div class="col-sm">

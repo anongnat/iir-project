@@ -17,6 +17,7 @@ export class HomePageComponent {
   checkedSize = window.innerWidth < 768 ? 2 : 5;
   widthScreen = "width :" + window.innerWidth + "px;";
   widthImg = "width :" + ((window.innerWidth / this.checkedSize)) + "px;";
+  heightScreen = "height:" +  window.innerHeight + "px;";
   // divStyle = 0;
   // marginLeft = 0;
   
@@ -24,6 +25,7 @@ export class HomePageComponent {
   constructor(@Inject(WINDOW) private windows: Window) {
     this.url = this.sanitizer.bypassSecurityTrustResourceUrl('https://player.vimeo.com/video/910841514?autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1&#t=235s&controls=0');
     this.windows.addEventListener("scroll", this.reveal);
+    console.log(this.heightScreen);
   }
 
   reveal() {
@@ -56,7 +58,8 @@ export class HomePageComponent {
     this.checkedSize = window.innerWidth < 768 ? 2 : 5;
     this.widthScreen = "width :" + window.innerWidth + "px;";
     this.widthImg = "width :" + ((window.innerWidth / this.checkedSize)) + "px;";
-    console.log(document.getElementsByClassName('first-pic')[0].getBoundingClientRect());
+    this.heightScreen = "height:" +  window.innerHeight + "px;";
+    console.log(this.heightScreen);
    
   }
 
