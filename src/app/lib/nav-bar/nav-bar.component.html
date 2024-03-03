@@ -14,12 +14,12 @@
         </div>
 
         <a (click)="toggleButton($event)" class="menu svg-square conditionalClose  {{displaySquare ? 'toggled' : ''}}"
-            *ngIf="displaySquare" style="margin-right: -10px;">
+            *ngIf="displaySquare" style="margin-right: -8px;">
             <img src="../assets/picture/Logo_03_white_nobackground.png" class="second-menu" width="100" height="80"
                 style="margin-top: -5px;">
         </a>
         <a (click)="toggleButton($event)" class="menu cube-open conditionalOpen {{!displaySquare ? 'toggled' : ''}}"
-            *ngIf="!displaySquare" style="margin-right: -10px;
+            *ngIf="!displaySquare" style="margin-right: -8px;
     ">
             <img src="../assets/picture/Logo_03_white_nobackground_open.png" class="second-menu" width="100" height="80"
                 style="margin-top: -5px;">
