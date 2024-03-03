@@ -8,19 +8,21 @@ import { Component, Input } from '@angular/core';
 export class NavBarComponent {
   @Input() from ='';
   displaySquare = true;
-  
+  // widthScreen = "width :" + window.screen.availWidth + "px;";
+
 
   constructor() {
+    // console.log(this.widthScreen);
   }
 
   toggleButton(event: any) {
-    if(document.getElementsByClassName("nav-bar")[0].classList.contains('condition-left')){
-      document.getElementsByClassName("nav-bar")[0].classList.add('condition-right');
-      document.getElementsByClassName("nav-bar")[0].classList.remove('condition-left');
-    }else{
-      document.getElementsByClassName("nav-bar")[0].classList.add('condition-left');
-      document.getElementsByClassName("nav-bar")[0].classList.remove('condition-right');
-    }
+    // if(document.getElementsByClassName("nav-bar")[0].classList.contains('condition-left')){
+    //   document.getElementsByClassName("nav-bar")[0].classList.add('condition-right');
+    //   document.getElementsByClassName("nav-bar")[0].classList.remove('condition-left');
+    // }else{
+    //   document.getElementsByClassName("nav-bar")[0].classList.add('condition-left');
+    //   document.getElementsByClassName("nav-bar")[0].classList.remove('condition-right');
+    // }
     if(event.currentTarget.classList.contains('svg-square')){
       this.displaySquare = false;
     }else{

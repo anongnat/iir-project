@@ -29,22 +29,26 @@
 
     <div class="reel">
         <div class="container content">
-            <div class="row all-pic">
+            <div class="row all-pic" [style]="widthScreen">
                 <div class="col-lg-3 col-md-5 col-sm-6 pic">
-                    <img src="../assets/picture/IMG_0168.jpeg">
+                    <img class="first-pic" [style]="widthImg" src="../assets/picture/IMG_0168.jpeg">
                 </div>
                 <div class="col-lg-3 col-md-5 col-sm-6 pic">
-                    <img src="../assets/picture/IMG_0169.jpeg">
+                    <img [style]="widthImg" src="../assets/picture/IMG_0169.jpeg">
                 </div>
                 <div class="col-lg-3 col-md-5 col-sm-6 pic">
-                    <img src="../assets/picture/IMG_0173.jpeg">
+                    <img [style]="widthImg" src="../assets/picture/IMG_0173.jpeg">
                 </div>
                 <div class="col-lg-3 col-md-5 col-sm-6 pic">
-                    <img src="../assets/picture/IMG_0172.jpeg">
+                    <img [style]="widthImg" src="../assets/picture/IMG_0172.jpeg">
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-6 pic" *ngIf="checkedSize == 2">
+                    <img [style]="widthImg" src="../assets/picture/IMG_0191.jpeg">
                 </div>
                 <div class="col-lg-3 col-md-5 col-sm-6 pic">
-                    <img src="../assets/picture/IMG_0175.jpeg">
+                    <img [style]="widthImg" src="../assets/picture/IMG_0175.jpeg">
                 </div>
+               
             </div>
         </div>
     </div>
@@ -56,25 +60,17 @@
                     <p class="service-text">
                         Our experienced team of animators have worked on the<br>
                         following projects at various studios, We're showcasing<br>
-                        their ability and expertise thraugh 11 RONIN to show you<br>
+                        their ability and expertise through 11 RONIN to show you<br>
                         the high-end services in keyframe animation we can<br>
                         provide in our boutique studio.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 pic">
-                    <video [muted]="'muted'" loop autoplay width="320" height="240">
-                        <source src="../assets/video/Bouncing_ball.mp4" type="video/mp4">
-                    </video>
                 </div>
             </div>
         </div>
     </div>
     <footer>
         <div class="row" style="width: 100%;">
-            <div class="col-lg-4 col-md-4 col-sm-4">
-                <div class="row" style="margin-top: 130px;
-                margin-left: 7px;">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <div class="row social-logo">
                     <a style="flex: 0 1 1%; cursor: default;"
                         href="https://www.instagram.com/11roninanimation/" target="_blank">
                         <svg width="30" height="30" style="fill: white; cursor: pointer;"
@@ -112,15 +108,16 @@
                         </svg>
                     </a>
                 </div>
-
             </div>
-            <div class="col-lg-4 col-lg-4 col-sm-4">
+            <div class="col-lg-4 col-lg-4 col-sm-4 col-xs-4" style="margin-top: 120px;">
                 <div class="logo-pic">
-                    <img src="../assets/picture/Logo_02_white_nobackground.png">
+                    <video [muted]="'muted'" loop autoplay width="320" height="240">
+                        <source src="../assets/video/Bouncing_ball.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
-            <div class="col-lg-4 col-lg-4 col-sm-4">
-                <div class="copyright" style="margin-top: 115px;">
+            <div class="col-lg-4 col-lg-4 col-sm-4 col-xs-4">
+                <div class="copyright">
                     <p class="copyright-text">© 11 RONIN 2024<br>
                         All Rights Reserved</p>
                 </div>

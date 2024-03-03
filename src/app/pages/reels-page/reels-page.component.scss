@@ -28,7 +28,7 @@ h3{
 
 .reel-text{
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     font-family: Thonburi Bold;
     text-align: center;
 }
@@ -53,10 +53,85 @@ h3{
 footer {
     background-color: black;
     margin-top: -25px;
-    .copyright-text{
+
+    .social-logo {
+        margin-top: 130px;
+        margin-left: 12px;
+    }
+
+    .copyright{
+        position: absolute;
+        right: 25px;
+        margin-top: 115px;
+    }
+
+    .copyright-text {
         color: white;
         font-size: 16px;
-        text-align: right;
+        text-align: center;
         font-family: Thonburi Bold;
+    }
+}
+
+@media only screen and (max-width: 2560px) {
+    footer {
+        margin-top: 700px;
+    }
+}
+
+@media only screen and (max-width: 1920px) {
+    footer {
+        margin-top: 330px;
+    }
+}
+
+@media only screen and (max-width: 1680px) {
+    footer {
+        margin-top: -10px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    footer {
+        margin-top: 65px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    footer {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .reel-text{
+        font-size: 15px;
+    }
+    footer {
+        margin-top: 124px;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    footer {
+        margin-top: 200px;
+        .social-logo {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin-top: 12px;
+        }
+
+        .copyright{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            right: -20px;
+            margin-top: 17px;
+        }
+
+        .copyright-text {
+            font-size: 12px;
+        }
     }
 }

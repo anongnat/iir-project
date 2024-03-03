@@ -1,27 +1,27 @@
 <nav class="topnav {{from}}">
     <div class="main">
         <a class="active" href="#">
-            <img src="../assets/picture/Logo_01_white_Nobackground.png" width="120" height="120"
+            <img src="../assets/picture/Logo_02_white_nobackground.png" class="main-logo" width="180" height="100"
                 style="margin-top: -9px;">
         </a>
     </div>
     <div class="second">
         <div class="nav-bar" style="margin-right: 140px; display: contents;">
-            <a href="#" style="margin-top: 26px; cursor: default;" class="nav-bar condition-left" *ngIf="!displaySquare"><p style="cursor: pointer;">HOME</p></a>
-            <a href="/about-us" style="margin-top: 26px; cursor: default;" class="nav-bar condition-left" *ngIf="!displaySquare"><p style="cursor: pointer;">ABOUT US</p></a>
-            <a href="/reel" style="margin-top: 26px; cursor: default;" class="nav-bar condition-left" *ngIf="!displaySquare"><p style="cursor: pointer;">REEL</p></a>
-            <a href="/contact" style="margin-top: 26px; cursor: default;" class="nav-bar condition-left" *ngIf="!displaySquare"><p style="cursor: pointer;">CONTACT</p></a>
+            <a href="#" style="margin-top: 20px; cursor: default;" class="nav-bar condition-left" *ngIf="!displaySquare"><p style="cursor: pointer;">HOME</p></a>
+            <a href="/about-us" style="margin-top: 20px; cursor: default;" class="nav-bar condition-left" *ngIf="!displaySquare"><p style="cursor: pointer;">ABOUT US</p></a>
+            <a href="/reel" style="margin-top: 20px; cursor: default;" class="nav-bar condition-left" *ngIf="!displaySquare"><p style="cursor: pointer;">REEL</p></a>
+            <a href="/contact" style="margin-top: 20px; cursor: default;" class="nav-bar condition-left" *ngIf="!displaySquare"><p style="cursor: pointer;">CONTACT</p></a>
         </div>
 
         <a (click)="toggleButton($event)" class="menu svg-square conditionalClose  {{displaySquare ? 'toggled' : ''}}"
-            *ngIf="displaySquare" style="margin-left: -140px; margin-right: -35px;">
-            <img src="../assets/picture/Logo_03_white_nobackground.png" class="cube-open" width="130" height="100"
+            *ngIf="displaySquare" style="margin-right: -10px;">
+            <img src="../assets/picture/Logo_03_white_nobackground.png" class="second-menu" width="100" height="80"
                 style="margin-top: -5px;">
         </a>
         <a (click)="toggleButton($event)" class="menu cube-open conditionalOpen {{!displaySquare ? 'toggled' : ''}}"
-            *ngIf="!displaySquare" style="margin-left: -140px; margin-right: -35px;
+            *ngIf="!displaySquare" style="margin-right: -10px;
     ">
-            <img src="../assets/picture/Logo_03_white_nobackground_open.png" class="cube-open" width="130" height="100"
+            <img src="../assets/picture/Logo_03_white_nobackground_open.png" class="second-menu" width="100" height="80"
                 style="margin-top: -5px;">
         </a>
 

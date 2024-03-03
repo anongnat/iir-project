@@ -1,20 +1,29 @@
-import { Component, Inject, inject } from '@angular/core';
+import { Component, HostListener, Inject, inject } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { WINDOW } from 'src/app/services/window.service';
 
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
-  styleUrls: ['./home-page.component.scss']
+  styleUrls: ['./home-page.component.scss'],
+  host: {
+    '(window:resize)': 'onResize($event)'
+  }
 })
 export class HomePageComponent {
   url: any = '';
   private sanitizer = inject(DomSanitizer);
   currentPosition = 0;
+  checkedSize = window.innerWidth < 768 ? 2 : 5;
+  widthScreen = "width :" + window.innerWidth + "px;";
+  widthImg = "width :" + ((window.innerWidth / this.checkedSize)) + "px;";
+  // divStyle = 0;
+  // marginLeft = 0;
+  
 
-  constructor(@Inject(WINDOW) private window: Window) {
+  constructor(@Inject(WINDOW) private windows: Window) {
     this.url = this.sanitizer.bypassSecurityTrustResourceUrl('https://player.vimeo.com/video/910841514?autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1&#t=235s&controls=0');
-    this.window.addEventListener("scroll", this.reveal);
+    this.windows.addEventListener("scroll", this.reveal);
   }
 
   reveal() {
@@ -40,4 +49,19 @@ export class HomePageComponent {
       }
     }
   }
+
+  onResize() {
+   
+    // this.marginLeft = document.getElementsByClassName('first-pic')[0].getBoundingClientRect();
+    this.checkedSize = window.innerWidth < 768 ? 2 : 5;
+    this.widthScreen = "width :" + window.innerWidth + "px;";
+    this.widthImg = "width :" + ((window.innerWidth / this.checkedSize)) + "px;";
+    console.log(document.getElementsByClassName('first-pic')[0].getBoundingClientRect());
+   
+  }
+
+  // ngAfterViewInit() {
+  //   console.log(this.marginLeft);
+  //   this.divStyle = this.marginLeft; 
+  // }
 }
