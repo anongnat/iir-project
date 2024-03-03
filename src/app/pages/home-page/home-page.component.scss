@@ -30,9 +30,9 @@ h1 {
     z-index: 1;
     font-family: Thonburi Bold;
 
-    &.v-text {
-        transform: translate3d(0px, 280px, 0px);
-    }
+    // &.v-text {
+    //     transform: translate3d(0px, 280px, 0px);
+    // }
 }
 
 .wrapper {
@@ -56,12 +56,8 @@ h1 {
     }
 
     .bottom {
-        bottom: 0;
-        right: 50%;
         position: relative;
         display: flex;
-        left: 0;
-        top: 51%;
     }
 
     .video-home {
@@ -150,7 +146,8 @@ footer {
 .reel {
     background-color: gray;
     height: 100%;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     h3 {
         text-align: center;
@@ -158,6 +155,7 @@ footer {
 
     .content {
         position: relative;
+        margin: 0;
     }
 
     .reel-title {
@@ -169,7 +167,6 @@ footer {
     .all-pic {
         display: flex;
         position: relative;
-        margin-left: -125px;
     }
 
     .pic {
@@ -229,7 +226,7 @@ footer {
 @media only screen and (max-width: 5120px) {
     .frame-container {
         .bottom {
-            top: 84%;
+            // top: 84%;
         }
         .video-home{
             position: absolute;
@@ -239,17 +236,12 @@ footer {
             margin-top: -472px
         }
     }
-    .reel {
-        .all-pic {
-            margin-left: -1913px;
-        }
-    }
 }
 
 @media only screen and (max-width: 2560px) {
     .frame-container {
         .bottom {
-            top: 75%;
+            // top: 75%;
         }
 
         .video-home {
@@ -260,24 +252,12 @@ footer {
             margin-top: -284px;
         }
     }
-
-    .reel {
-        .all-pic {
-            margin-left: -631px;
-        }
-    }
 }
 
 @media only screen and (max-width: 1920px) {
     .frame-container {
         .bottom {
-            top: 70%;
-        }
-    }
-
-    .reel {
-        .all-pic {
-            margin-left: -330px;
+            // top: 70%;
         }
     }
 }
@@ -285,13 +265,7 @@ footer {
 @media only screen and (max-width: 1680px) {
     .frame-container {
         .bottom {
-            top: 69%;
-        }
-    }
-
-    .reel {
-        .all-pic {
-            margin-left: -192px;
+            // top: 69%;
         }
     }
 }
@@ -300,13 +274,7 @@ footer {
 @media only screen and (max-width: 1440px) {
     .frame-container {
         .bottom {
-            top: 63%;
-        }
-    }
-
-    .reel {
-        .all-pic {
-            margin-left: -72px;
+            // top: 63%;
         }
     }
 }
@@ -314,13 +282,7 @@ footer {
 @media only screen and (max-width: 1367px) {
     .frame-container {
         .bottom {
-            top: 58%;
-        }
-    }
-
-    .reel {
-        .all-pic {
-            margin-left: -125px;
+            // top: 58%;
         }
     }
 }
@@ -328,17 +290,11 @@ footer {
 @media only screen and (max-width: 1024px) {
     .frame-container {
         .bottom {
-            top: 58%;
+            // top: 58%;
 
             .text-center {
                 font-size: 40px;
             }
-        }
-    }
-
-    .reel {
-        .all-pic {
-            margin-left: -43px;
         }
     }
 
@@ -352,13 +308,7 @@ footer {
 @media only screen and (max-width: 811px) {
     .frame-container {
         .bottom {
-            top: 58%;
-        }
-    }
-
-    .reel {
-        .all-pic {
-            margin-left: -125px;
+            // top: 58%;
         }
     }
 }
@@ -366,7 +316,7 @@ footer {
 @media only screen and (max-width: 768px) {
     .frame-container {
         .bottom {
-            top: 68%;
+            // top: 68%;
 
             .text-center {
                 font-size: 40px;
@@ -399,12 +349,6 @@ footer {
         }
     }
 
-    .reel {
-        .all-pic {
-            margin-left: -36px;
-        }
-    }
-
     .service {
         .service-text {
             font-size: 20px;
@@ -415,7 +359,7 @@ footer {
 @media only screen and (max-width: 426px) {
     .frame-container {
         .bottom {
-            top: 54%;
+            // top: 54%;
 
             .text-center {
                 font-size: 15px;
@@ -444,12 +388,6 @@ footer {
 
         .reveal {
             top: 30%;
-        }
-    }
-
-    .reel {
-        .all-pic {
-            margin-left: -33px;
         }
     }
 

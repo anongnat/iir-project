@@ -3,7 +3,7 @@
     <div class="frame-container" [style]="heightScreen">
         <p class="text-center"><img width="50%" height="50%" src="../assets/picture/Logo_02_white_nobackground.png"></p>
         <div class="bottom">
-            <p class="text-center v-text">V</p>
+            <p class="text-center v-text" [style]="bottomSign">V</p>
         </div>
         <video [muted]="'muted'" width="100%" class="video-home" playsinline autoplay loop>
             <source src="../assets/video/Home_Page.mp4" type="video/mp4">
@@ -30,8 +30,8 @@
     <div class="reel">
         <div class="container content">
             <div class="row all-pic" [style]="widthScreen">
-                <div class="col-lg-3 col-md-5 col-sm-6 pic">
-                    <img class="first-pic" [style]="widthImg" src="../assets/picture/IMG_0168.jpeg">
+                <div class="col-lg-3 col-md-5 col-sm-6 pic" >
+                    <img class="first-pic" [style]="widthImg" src="../assets/picture/IMG_0168.jpeg" #mySelector>
                 </div>
                 <div class="col-lg-3 col-md-5 col-sm-6 pic">
                     <img [style]="widthImg" src="../assets/picture/IMG_0169.jpeg">
@@ -111,7 +111,7 @@
             </div>
             <div class="col-lg-4 col-lg-4 col-sm-4 col-xs-4" style="margin-top: 120px;">
                 <div class="logo-pic">
-                    <video [muted]="'muted'" loop autoplay width="320" height="240">
+                    <video [muted]="'muted'" loop autoplay width="320" height="240" playsinline>
                         <source src="../assets/video/Bouncing_ball.mp4" type="video/mp4">
                     </video>
                 </div>
