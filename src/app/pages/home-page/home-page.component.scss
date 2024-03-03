@@ -343,12 +343,26 @@ footer {
 
 @media only screen and (max-width: 426px) {
     .frame-container {
+        height: 650px;
         .bottom {
-            top: -24%;
+            top: 54%;
 
             .text-center {
                 font-size: 15px;
             }
+        }
+
+        img{
+            width: 200px;
+            height: 120px;
+        }
+
+        .video-home {
+            width: 570%;
+            margin-left: -100%;
+            height: 1669px;
+            transform: translate3d(0px, 0px, 0px);
+            margin-top: -453px;
         }
     }
     .about-us {
@@ -402,11 +416,25 @@ footer {
 }
 
 @media only screen and (max-width: 376px) {
-    .frame-container {
-        .bottom {
-            top: -39%;
-        }
-    }
+    // .frame-container {
+    //     height: 650px;
+    //     .bottom {
+    //         top: 54%;
+    //     }
+
+    //     img{
+    //         width: 200px;
+    //         height: 120px;
+    //     }
+
+    //     .video-home {
+    //         width: 570%;
+    //         margin-left: -100%;
+    //         height: 1669px;
+    //         transform: translate3d(0px, 0px, 0px);
+    //         margin-top: -453px;
+    //     }
+    // }
     .about-us {
         .reveal {
             top: 25%;
@@ -421,23 +449,23 @@ footer {
 
 @media only screen and (max-width: 320px) {
     .frame-container {
-        height: 650px;
+        // height: 650px;
 
-        img{
-            width: 200px;
-            height: 120px;
-        }
-        .bottom {
-            top: -62%;
-        }
+        // img{
+        //     width: 200px;
+        //     height: 120px;
+        // }
+        // .bottom {
+        //     top: -62%;
+        // }
     
-        .video-home {
-            width: 570%;
-            margin-left: -100%;
-            height: 1669px;
-            transform: translate3d(0px, 0px, 0px);
-            margin-top: -453px;
-        }
+        // .video-home {
+        //     width: 570%;
+        //     margin-left: -100%;
+        //     height: 1669px;
+        //     transform: translate3d(0px, 0px, 0px);
+        //     margin-top: -453px;
+        // }
     }
 
     .about-us {
