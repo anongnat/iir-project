@@ -4,11 +4,14 @@ import { WINDOW } from 'src/app/services/window.service';
 @Component({
   selector: 'app-about-us-page',
   templateUrl: './about-us-page.component.html',
-  styleUrls: ['./about-us-page.component.scss']
+  styleUrls: ['./about-us-page.component.scss'],
+  host: {
+    '(window:resize)': 'onResize($event)'
+  }
 })
 export class AboutUsPageComponent {
-  constructor(@Inject(WINDOW) private window: Window) {
-    //this.window.addEventListener("scroll", this.reveal);
+  heightScreen = window.innerHeight - 2;
+  constructor() {
   }
 
   reveal() {
@@ -26,6 +29,10 @@ export class AboutUsPageComponent {
       }
 
     }
+  }
+
+  onResize() {
+    this.heightScreen = window.innerHeight - 2;
   }
 
 }

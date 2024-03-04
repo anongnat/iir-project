@@ -1,7 +1,7 @@
 <app-nav-bar [from]="'home-page'"></app-nav-bar>
-<div class="reel">
+<div class="reel" [ngStyle]="{'height.px': heightScreen}">
 
-    <div class="container content reveal">
+    <div class="container content">
         <div class="frame-container">
             <video controls loop autoplay width="320" height="240" class="video-reel" playsinline>
                 <source src="../assets/video/Reel.mp4" type="video/mp4">

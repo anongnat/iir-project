@@ -4,11 +4,15 @@ import { WINDOW } from 'src/app/services/window.service';
 @Component({
   selector: 'app-contact-page',
   templateUrl: './contact-page.component.html',
-  styleUrls: ['./contact-page.component.scss']
+  styleUrls: ['./contact-page.component.scss'],
+  host: {
+    '(window:resize)': 'onResize($event)'
+  }
 })
 export class ContactPageComponent {
-  constructor(@Inject(WINDOW) private window: Window) {
-    //this.window.addEventListener("scroll", this.reveal);
+  heightScreen = window.innerHeight - 2;
+  footer = window.innerWidth === 1920 ? (window.innerHeight > 1080 ? 654 : 532) : 0;
+  constructor() {
   }
 
   reveal() {
@@ -26,5 +30,10 @@ export class ContactPageComponent {
       }
 
     }
+  }
+
+  onResize() {
+    this.heightScreen = window.innerHeight - 2;
+    this.footer = window.innerHeight > 1080 ? 654 : 532;
   }
 }

@@ -1,20 +1,20 @@
-import { Component, Inject, ViewChild, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
-import { WINDOW } from 'src/app/services/window.service';
 
 @Component({
   selector: 'app-reels-page',
   templateUrl: './reels-page.component.html',
-  styleUrls: ['./reels-page.component.scss']
+  styleUrls: ['./reels-page.component.scss'],
+  host: {
+    '(window:resize)': 'onResize($event)'
+  }
 })
 export class ReelsPageComponent {
   url: any = '';
+  heightScreen = window.innerHeight - 2;
   private sanitizer = inject(DomSanitizer);
-  constructor(@Inject(WINDOW) private window: Window) {
+  constructor() {
     this.url = this.sanitizer.bypassSecurityTrustResourceUrl('https://player.vimeo.com/video/910842295?autoplay=1&loop=1');
-    //this.window.addEventListener("scroll", this.reveal);
-    // const video: HTMLVideoElement = this.videoElement.nativeElement;
-    // video.play();
   }
 
   reveal() {
@@ -30,7 +30,10 @@ export class ReelsPageComponent {
       } else {
         reveals[i].classList.remove("active");
       }
-
     }
+  }
+
+  onResize() {
+    this.heightScreen = window.innerHeight - 2;
   }
 }

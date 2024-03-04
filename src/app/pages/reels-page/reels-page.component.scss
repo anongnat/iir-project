@@ -1,6 +1,5 @@
 .reel {
     background-color: black;
-    height: 100vh;
 }
 
 h3{
@@ -55,14 +54,14 @@ footer {
     margin-top: -25px;
 
     .social-logo {
-        margin-top: 130px;
-        margin-left: 12px;
+        margin-top: 141px;
+        margin-left: 15px;
     }
 
     .copyright{
         position: absolute;
-        right: 25px;
-        margin-top: 115px;
+        right: 30px;
+        margin-top: 122px;
     }
 
     .copyright-text {
@@ -87,19 +86,31 @@ footer {
 
 @media only screen and (max-width: 1680px) {
     footer {
-        margin-top: -10px;
+        margin-top: 289px;
     }
 }
 
 @media only screen and (max-width: 1440px) {
     footer {
-        margin-top: 65px;
+        margin-top: 145px;
+    }
+}
+
+@media only screen and (max-width: 1367px) {
+    footer {
+        margin-top: 76px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    footer {
+        margin-top: 108px;
     }
 }
 
 @media only screen and (max-width: 1024px) {
     footer {
-        margin-top: 30px;
+        margin-top: 139px;
     }
 }
 

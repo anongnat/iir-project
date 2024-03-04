@@ -1,6 +1,5 @@
 .app-contact-page {
     background-color: black;
-    height: 100vh;
 }
 
 .box {
@@ -28,6 +27,20 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    .detail{
+        margin-top: 28px;
+        position: relative;
+        display: flex;
+    }
+
+    .text-detail {
+        color: white;
+        text-align: left;
+        font-size: 16px;
+        font-family: Thonburi Bold;
+        position: absolute;
+        right: 40px;
+    }
 }
 
 .logo-pic {
@@ -54,9 +67,38 @@ footer {
     background-color: black;
     margin-top: 200px;
 
-    .copyright{
-        margin-left: 55px;
+    .contact-detail {
+        margin-left: 17px;
+        margin-top: 56px;
+
+        .email {
+            color: white;
+            text-align: left;
+            font-size: 16px;
+            font-family: Thonburi Bold;
+            line-height: 0.5;
+        }
+
+        .website {
+            color: white;
+            text-align: left;
+            font-size: 16px;
+            font-family: Thonburi Bold;
+            line-height: 0.6;
+        }
     }
+
+    .social-logo {
+        margin-left: 15px;
+        margin-top: 3px;
+    }
+
+    .copyright {
+        position: absolute;
+        right: 30px;
+        margin-top: 91px;
+    }
+
     .copyright-text {
         color: white;
         font-size: 16px;
@@ -67,32 +109,55 @@ footer {
 
 @media only screen and (max-width: 2560px) {
     footer {
-        margin-top: 1000px;
+        margin-top: 876px;
     }
 }
 
-@media only screen and (max-width: 1920px) {
+@media screen and (max-height: 1200px), screen and (max-width: 1920px)
+ {
     footer {
-        margin-top: 580px;
+        margin-top: 654px;
     }
 }
+
+@media screen and (max-width: 1920px)
+ {
+    footer {
+        margin-top: 532px;
+    }
+}
+
+
 
 @media only screen and (max-width: 1680px) {
     footer {
-        margin-top: 200px;
+        margin-top: 504px;
     }
 }
 
 @media only screen and (max-width: 1440px) {
     footer {
-        margin-top: 305px;
+        margin-top: 356px;
+    }
+}
+
+@media only screen and (max-width: 1367px) {
+    footer {
+        margin-top: 223px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    footer {
+        margin-top: 256px;
     }
 }
 
 @media only screen and (max-width: 1024px) {
     footer {
-        margin-top: 228px;
-        .copyright{
+        margin-top: 340px;
+
+        .copyright {
             margin-left: 158px;
         }
 
@@ -102,6 +167,14 @@ footer {
     }
 
     .content {
+
+        .text-detail{
+            font-size: 11px;
+        }
+        .location {
+            justify-content: center;
+        }
+
         .location-name {
             font-size: 45px;
         }
@@ -109,33 +182,6 @@ footer {
         img {
             width: 300px;
             height: 230px;
-        }
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    footer {
-        margin-top: 228px;
-        .copyright{
-            margin-left: 158px;
-        }
-
-        .copyright-text {
-            font-size: 14px;
-        }
-    }
-
-    .content {
-        .location{
-            justify-content: center;
-        }
-        .location-name {
-            font-size: 45px;
-        }
-
-        img {
-            width: 420px;
-            height: 350px;
         }
     }
 }

@@ -1,7 +1,6 @@
 .topnav {
     overflow: hidden;
     position: sticky;
-    // backdrop-filter: blur(10px);
     inset: 0;
     z-index: 1;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.125) 1%, #000000 60%);
@@ -15,10 +14,14 @@
 
     .main {
         float: left;
+        margin-left: 2px;
+        margin-top: -3px;
     }
 
     .second {
         float: right;
+        margin-top: 1px;
+        margin-right: 2px;
 
         .svg-bar {
             fill: white;
@@ -34,10 +37,6 @@
     text-decoration: none;
     font-size: 20px;
     font-family: Thonburi Bold;
-}
-
-.topnav a:hover {
-    // color: black;
 }
 
 .topnav a.active {

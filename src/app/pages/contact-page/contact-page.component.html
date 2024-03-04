@@ -1,5 +1,5 @@
 <app-nav-bar [from]="'home-page'"></app-nav-bar>
-<div class="app-contact-page">
+<div class="app-contact-page" [ngStyle]="{'height.px': heightScreen}">
     <div class="container content reveal">
         <div class="row">
             <div class="col-lg-4 col-md-12 col-sm-6">
@@ -30,9 +30,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 ml-auto" style="margin-top: 28px;">
-                <p
-                    style="color: white; text-align: left; font-size: 16px; font-family: Thonburi Bold;">
+            <div class="col-lg-12 col-md-12 col-sm-12 detail">
+                <p class="text-detail" >
                     Interested in collaboration? Drop us a line, and<br>
                     let's discuss the potential of bringing your<br>
                     project to life together</p>
@@ -43,15 +42,13 @@
     <footer>
         <div class="row" style="width: 100%;">
             <div class="col-lg-8 col-md-6 col-sm-6 col-xs-6">
-                <div class="row contact-detail" style="margin-left: 35px; margin-top: -30px;">
-                    <p
-                        style="color: white; text-align: left; font-size: 16px; font-family: Thonburi Bold; line-height: 0.5;">
+                <div class="row contact-detail">
+                    <p class="email">
                         E-mail: info@11ronin.com</p>
-                    <p
-                        style="color: white; text-align: left; font-size: 16px; font-family: Thonburi Bold; line-height: 0.6;">
+                    <p class="website">
                         www.11ronin.com</p>
                 </div>
-                <div class="row social-logo" style="margin-left: 35px; margin-top: -3px;" >
+                <div class="row social-logo">
                     <a style="flex: 0 1 1%; cursor: default;" href="https://www.instagram.com/11roninanimation/"
                         target="_blank">
                         <svg width="30" height="30" style="fill: white; cursor: pointer;"
