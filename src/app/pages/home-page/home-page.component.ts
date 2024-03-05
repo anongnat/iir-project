@@ -1,5 +1,4 @@
-import { Component, Inject, inject } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
+import { Component, Inject } from '@angular/core';
 import { WINDOW } from 'src/app/services/window.service';
 
 @Component({
@@ -12,10 +11,9 @@ import { WINDOW } from 'src/app/services/window.service';
 })
 export class HomePageComponent {
   url: any = '';
-  private sanitizer = inject(DomSanitizer);
   currentPosition = 0;
   checkedSize = window.innerWidth < 768 ? 2 : 5;
-  reduceHeight = window.innerWidth < 427 ? 24 : 100;
+  reduceHeight = this.checkBottomVsign();
   widthPic = (window.innerWidth / this.checkedSize) - 3;
   widthScreen = window.innerWidth - 15;
   heightScreen = "height:" +  window.innerHeight + "px;";
@@ -56,5 +54,23 @@ export class HomePageComponent {
     this.heightScreen = "height:" +  window.innerHeight + "px;";
     this.bottomSign = "top:" +  (window.innerHeight - this.reduceHeight) + "px;";
     this.widthPic = (window.innerWidth / this.checkedSize) - 3;
+  }
+
+  checkBottomVsign(){
+    let reduce = window.innerWidth < 427 ? 24 : 50;
+    if(window.innerWidth === 1920 && window.innerHeight === 1200){
+      reduce = 170;
+    }else if(window.innerWidth === 1680 && window.innerHeight === 1050){
+      reduce = 160;
+    }else if(window.innerWidth === 1440 && window.innerHeight === 900){
+      reduce = 140;
+    }else if(window.innerWidth === 1280 && window.innerHeight === 800){
+      reduce = 140;
+    }else if(window.innerWidth === 1024 && window.innerHeight === 768){
+      reduce = 140;
+    }else if(window.innerWidth === 1024 && window.innerHeight === 600){
+      reduce = 60;
+    }
+    return reduce;
   }
 }
