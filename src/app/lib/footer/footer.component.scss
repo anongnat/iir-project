@@ -1,0 +1,23 @@
+footer {
+    background-color: black;
+    height: 200px;
+    margin-top: -40px;
+
+    .social-logo {
+        margin-top: 141px;
+        margin-left: 15px;
+    }
+
+    .copyright{
+        position: absolute;
+        right: 30px;
+        margin-top: 122px;
+    }
+
+    .copyright-text {
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        font-family: Thonburi Bold;
+    }
+}

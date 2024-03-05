@@ -23,6 +23,20 @@
         margin-top: 1px;
         margin-right: 2px;
 
+        .nav-bar {
+            margin-right: 140px;
+            display: contents;
+
+            .condition-left {
+                margin-top: 20px;
+                cursor: default;
+
+                p {
+                    cursor: pointer;
+                }
+            }
+        }
+
         .svg-bar {
             fill: white;
         }
@@ -162,33 +176,18 @@
     }
 }
 
-// @media only screen and (max-width: 1680px) {
-//     .topnav {
-//         width: 1680px;
-//     }
-// }
-
-
-// @media only screen and (max-width: 1440px) {
-//     .topnav {
-//         width: 1440px;
-//     }
-// }
-
-// @media only screen and (max-width: 1024px) {
-//     .topnav {
-//         width: 1024px;
-//     }
-// }
-
 @media only screen and (max-width: 768px) {
+    // .topnav a {
+    //     font-size: 16px;
+    // }
+
+    // --------
+
     .topnav a {
-        font-size: 16px;
+        font-size: 8px;
+        // margin-right: -14px;
     }
 
-}
-
-@media only screen and (max-width: 426px) {
     .topnav {
         .main {
             .main-logo {
@@ -196,14 +195,66 @@
                 height: 60px;
             }
         }
-        .second{
-            .menu{
-                img{
-                    width: 60px;
-                    height: 40px;
+
+        .second {
+            .nav-bar {
+
+                .condition-left {
+                    margin-top: 3px;
                 }
             }
-            
+
+            .menu {
+                img {
+                    width: 50px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 517px) {
+    .topnav {
+        .second {
+            margin-top: -70px;
+        }
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .topnav a {
+        font-size: 8px;
+        margin-right: -14px;
+    }
+
+    .topnav {
+        .main {
+            .main-logo {
+                width: 140px;
+                height: 60px;
+            }
+        }
+
+        .second {
+
+            &.true{
+                margin-top: 0px;
+                margin-right: -3px;
+            }
+
+            &.false{
+                margin-top: -69px;
+                margin-right: -3px;
+            }
+
+            .menu {
+                img {
+                    width: 50px;
+                    height: 30px;
+                }
+            }
+
         }
     }
 }

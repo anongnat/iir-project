@@ -5,13 +5,12 @@
                 style="margin-top: -9px;">
         </a>
     </div>
-    <!-- padding 36cm -->
-    <div class="second">
-        <div class="nav-bar" style="margin-right: 140px; display: contents;">
-            <a href="#" style="margin-top: 20px; cursor: default;" class="nav-bar condition-left" *ngIf="!displaySquare"><p style="cursor: pointer;">HOME</p></a>
-            <a href="/about-us" style="margin-top: 20px; cursor: default;" class="nav-bar condition-left" *ngIf="!displaySquare"><p style="cursor: pointer;">ABOUT US</p></a>
-            <a href="/reel" style="margin-top: 20px; cursor: default;" class="nav-bar condition-left" *ngIf="!displaySquare"><p style="cursor: pointer;">REEL</p></a>
-            <a href="/contact" style="margin-top: 20px; cursor: default;" class="nav-bar condition-left" *ngIf="!displaySquare"><p style="cursor: pointer;">CONTACT</p></a>
+    <div class="second {{displaySquare}}">
+        <div class="nav-bar">
+            <a href="#" class="condition-left" *ngIf="!displaySquare"><p>HOME</p></a>
+            <a href="/about-us" class="condition-left" *ngIf="!displaySquare"><p>ABOUT US</p></a>
+            <a href="/reel" class="condition-left" *ngIf="!displaySquare"><p>REEL</p></a>
+            <a href="/contact" class="condition-left" *ngIf="!displaySquare"><p>CONTACT</p></a>
         </div>
 
         <a (click)="toggleButton($event)" class="menu svg-square conditionalClose  {{displaySquare ? 'toggled' : ''}}"

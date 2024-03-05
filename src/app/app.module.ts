@@ -8,6 +8,7 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 import { AboutUsPageComponent } from './pages/about-us-page/about-us-page.component';
 import { NavBarComponent } from './lib/nav-bar/nav-bar.component';
 import { WINDOW_PROVIDERS } from "./services/window.service";
+import { FooterComponent } from './lib/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { WINDOW_PROVIDERS } from "./services/window.service";
     ContactPageComponent,
     AboutUsPageComponent,
     NavBarComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
