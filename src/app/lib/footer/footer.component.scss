@@ -38,10 +38,11 @@ footer {
     }
 
     .logo-pic{
-        margin-top: -5px;;
+        margin-top: -5px;
+        video{
+            pointer-events: none;
+        }
     }
-
-
 
     .copyright {
         position: absolute;

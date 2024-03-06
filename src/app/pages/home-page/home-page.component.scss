@@ -154,6 +154,7 @@ h1 {
 
         img {
             height: 100%;
+            pointer-events: none;
         }
     }
 
@@ -195,71 +196,6 @@ h1 {
         font-family: Thonburi Bold;
         letter-spacing: 2px;
         text-align: center;
-    }
-}
-
-@media only screen and (max-width: 5120px) {
-    .frame-container {
-        .bottom {
-            // top: 84%;
-        }
-
-        // .video-home{
-        //     position: absolute;
-        //     width: 301%;
-        //     margin-left: -101%;
-        //     height: 3840px;
-        //     margin-top: -472px
-        // }
-    }
-}
-
-@media only screen and (max-width: 2560px) {
-    .frame-container {
-        .bottom {
-            // top: 75%;
-        }
-
-        // .video-home {
-        //     position: absolute;
-        //     width: 385%;
-        //     margin-left: -138%;
-        //     height: 2200px;
-        //     margin-top: -284px;
-        // }
-    }
-}
-
-@media only screen and (max-width: 1920px) {
-    .frame-container {
-        .bottom {
-            // top: 70%;
-        }
-    }
-}
-
-@media only screen and (max-width: 1680px) {
-    .frame-container {
-        .bottom {
-            // top: 69%;
-        }
-    }
-}
-
-
-@media only screen and (max-width: 1440px) {
-    .frame-container {
-        .bottom {
-            // top: 63%;
-        }
-    }
-}
-
-@media only screen and (max-width: 1367px) {
-    .frame-container {
-        .bottom {
-            // top: 58%;
-        }
     }
 }
 

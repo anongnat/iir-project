@@ -16,6 +16,7 @@
     img {
         width: 420px;
         height: 350px;
+        pointer-events: none;
     }
 
     .location-name {
@@ -41,16 +42,6 @@
         font-family: Thonburi Bold;
         position: absolute;
         right: 40px;
-    }
-}
-
-.logo-pic {
-    text-align: center;
-    margin-top: -35px;
-
-    img {
-        width: 360px;
-        height: 100%;
     }
 }
 
