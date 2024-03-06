@@ -14,10 +14,11 @@ export class HomePageComponent {
   currentPosition = 0;
   checkedSize = window.innerWidth < 768 ? 2 : 5;
   reduceHeight = this.checkBottomVsign();
-  widthPic = (window.innerWidth / this.checkedSize) - 3;
-  widthScreen = window.innerWidth - 15;
+  widthPic = window.innerWidth < 1024 ? (window.innerWidth / this.checkedSize) :  (window.innerWidth / this.checkedSize) - 3;
+  widthScreen = window.innerWidth < 768 ? window.innerWidth :window.innerWidth - 15;
   heightScreen = "height:" +  window.innerHeight + "px;";
   bottomSign = "top:" +  (window.innerHeight - this.reduceHeight) + "px;";
+  realWidth = window.innerWidth < 1024 ? window.innerWidth : window.innerWidth - 15;
   
 
   constructor(@Inject(WINDOW) private windows: Window) {
@@ -50,10 +51,11 @@ export class HomePageComponent {
 
   onResize() {
     this.checkedSize = window.innerWidth < 768 ? 2 : 5;
-    this.widthScreen = window.innerWidth - 15 ;
+    this.widthScreen = window.innerWidth < 768 ? window.innerWidth :window.innerWidth - 15;
     this.heightScreen = "height:" +  window.innerHeight + "px;";
     this.bottomSign = "top:" +  (window.innerHeight - this.reduceHeight) + "px;";
-    this.widthPic = (window.innerWidth / this.checkedSize) - 3;
+    this.widthPic = window.innerWidth < 1024 ? (window.innerWidth / this.checkedSize) :  (window.innerWidth / this.checkedSize) - 3;
+    this.realWidth = window.innerWidth < 1024 ? window.innerWidth : window.innerWidth -15;
   }
 
   checkBottomVsign(){

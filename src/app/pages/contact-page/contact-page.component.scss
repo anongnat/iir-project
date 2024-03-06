@@ -99,13 +99,30 @@ footer {
     }
 }
 
+@media only screen and (max-width: 1367px) {
+    .content {
+        img {
+            width: 360px;
+            height: 300px;
+        }
+
+        .location-name {
+            font-size: 55px;
+        }
+
+        .text-detail {
+            font-size: 13px;
+        }
+    }
+}
+
 @media only screen and (max-width: 1024px) {
     .content {
-        top: 9%;
+        top: 25%;
 
         .text-detail {
             font-size: 11px;
-            right: 236px;
+            right: 36px;
             margin-top: -32px;
         }
 
@@ -121,6 +138,86 @@ footer {
             width: 300px;
             height: 230px;
             margin-bottom: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .content {
+        top: 8%;
+
+        .text-detail {
+            right: 235px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .content {
+        top: 10%;
+
+        .text-detail {
+            font-size: 11px;
+            right: 235px;
+            margin-top: -32px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        top: 10%;
+
+        .text-detail {
+            right: 148px;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .content {
+        top: 10%;
+        img{
+            width: 270px;
+            height: 170px;
+            margin-bottom: 12px;
+        
+        }
+
+        .text-detail {
+            right: 118px;
+        }
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .content {
+        .text-detail {
+            right: 85px;
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .content {
+        top: 15%;
+        img{
+            width: 170px;
+            height: 100px;
+            margin-bottom: 12px;
+        
+        }
+        .text-detail {
+            right: 90px;
+        }
+
+        .text-detail {
+            font-size: 8px;
+        }
+
+        .location-name {
+            font-size: 18px;
         }
     }
 }

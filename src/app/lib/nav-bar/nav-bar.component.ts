@@ -3,31 +3,35 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
-  styleUrls: ['./nav-bar.component.scss']
+  styleUrls: ['./nav-bar.component.scss'],
+  host: {
+    '(window:resize)': 'onResize($event)'
+  }
 })
 export class NavBarComponent {
-  @Input() from ='';
+  @Input() from = '';
   displaySquare = true;
-  // widthScreen = "width :" + window.screen.availWidth + "px;";
+  widthScreen = this.checkWidth();
 
 
   constructor() {
-    // console.log(this.widthScreen);
   }
 
   toggleButton(event: any) {
-    // if(document.getElementsByClassName("nav-bar")[0].classList.contains('condition-left')){
-    //   document.getElementsByClassName("nav-bar")[0].classList.add('condition-right');
-    //   document.getElementsByClassName("nav-bar")[0].classList.remove('condition-left');
-    // }else{
-    //   document.getElementsByClassName("nav-bar")[0].classList.add('condition-left');
-    //   document.getElementsByClassName("nav-bar")[0].classList.remove('condition-right');
-    // }
-    if(event.currentTarget.classList.contains('svg-square')){
+    if (event.currentTarget.classList.contains('svg-square')) {
       this.displaySquare = false;
-    }else{
+    } else {
       this.displaySquare = true;
     }
+  }
+
+  onResize() {
+    this.widthScreen = this.checkWidth();
+  }
+
+  checkWidth() {
+    let width = window.innerWidth;
+    return width;
   }
 
 }

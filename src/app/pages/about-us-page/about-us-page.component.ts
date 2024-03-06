@@ -10,11 +10,13 @@ import { Component } from '@angular/core';
 })
 export class AboutUsPageComponent {
   heightScreen = (window.innerHeight + 24) - 185;
+  realWidth = window.innerWidth;
   constructor() {
   }
 
   onResize() {
     this.heightScreen = (window.innerHeight + 24) - 185;
+    this.realWidth = window.innerWidth;
   }
 
 }

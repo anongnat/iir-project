@@ -21,7 +21,7 @@
     .second {
         float: right;
         margin-top: 1px;
-        margin-right: 2px;
+        margin-right: 18px;
 
         .nav-bar {
             margin-right: 140px;
@@ -88,66 +88,76 @@
 
 .conditionalOpen {
     -webkit-animation: scale-up-ver-center 0.1s steps(8, end) both;
-	        animation: scale-up-ver-center 0.1s steps(8, end) both;
+    animation: scale-up-ver-center 0.1s steps(8, end) both;
 }
 
 @-webkit-keyframes tracking-in-expand {
     0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
+        letter-spacing: -0.5em;
+        opacity: 0;
     }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes tracking-in-expand {
-    0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
 
-  @-webkit-keyframes scale-up-ver-center {
-    0% {
-      -webkit-transform: scaleY(0.4);
-              transform: scaleY(0.4);
+    40% {
+        opacity: 0.6;
     }
+
     100% {
-      -webkit-transform: scaleY(1);
-              transform: scaleY(1);
+        opacity: 1;
     }
-  }
-  @keyframes scale-up-ver-center {
+}
+
+@keyframes tracking-in-expand {
     0% {
-      -webkit-transform: scaleY(0.4);
-              transform: scaleY(0.4);
+        letter-spacing: -0.5em;
+        opacity: 0;
     }
+
+    40% {
+        opacity: 0.6;
+    }
+
     100% {
-      -webkit-transform: scaleY(1);
-              transform: scaleY(1);
+        opacity: 1;
     }
-  }
-  
+}
+
+@-webkit-keyframes scale-up-ver-center {
+    0% {
+        -webkit-transform: scaleY(0.4);
+        transform: scaleY(0.4);
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+    }
+}
+
+@keyframes scale-up-ver-center {
+    0% {
+        -webkit-transform: scaleY(0.4);
+        transform: scaleY(0.4);
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .topnav {
+        .second {
+            margin-top: 1px;
+            margin-right: 0px;
+        }
+    }
+}
+
 
 @media only screen and (max-width: 768px) {
-    // .topnav a {
-    //     font-size: 16px;
-    // }
-
-    // --------
-
     .topnav a {
         font-size: 8px;
-        // margin-right: -14px;
     }
 
     .topnav {
@@ -159,6 +169,9 @@
         }
 
         .second {
+            margin-top: 3px;
+            margin-right: 1px;
+
             .nav-bar {
 
                 .condition-left {
@@ -184,7 +197,7 @@
     }
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 480px) {
     .topnav a {
         font-size: 8px;
         margin-right: -14px;
@@ -200,13 +213,13 @@
 
         .second {
 
-            &.true{
+            &.true {
                 margin-top: 0px;
                 margin-right: -3px;
             }
 
-            &.false{
-                margin-top: -69px;
+            &.false {
+                margin-top: 0px;
                 margin-right: -3px;
             }
 
@@ -221,11 +234,69 @@
     }
 }
 
-// @media only screen and (max-width: 375px) {
-//     .topnav {
-//         width: 375px;
-//     }
-// }
+@media only screen and (max-width: 426px) {
+    .topnav {
+        .second {
+            &.false {
+                margin-top: -69px;
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .topnav {
+        .second {
+            &.false {
+                margin-top: -71px;
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .topnav {
+        .main {
+            img {
+                width: 120px;
+                height: 40px;
+            }
+        }
+
+        .second {
+            &.false {
+                margin-top: -2px;
+            }
+
+            .nav-bar {
+                a {
+                    margin-left: -11px;
+                }
+
+                .condition-left {
+                    margin-top: 4px;
+                }
+            }
+
+            .menu {
+                margin-left: -23px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .topnav {
+
+        .second {
+            &.false {
+                margin-top: -70px;
+            }
+        }
+    }
+}
 
 @media only screen and (max-width: 320px) {
     .topnav {
@@ -236,33 +307,16 @@
             }
         }
 
-        ;
+        .second {
+            .nav-bar {
+                a {
+                    margin-left: -18px;
+                }
+            }
+
+            .menu {
+                margin-left: -24px;
+            }
+        }
     }
 }
-
-
-// @media only screen and (max-width: 600px) {
-//     .topnav {
-//         .second {
-//             .svg-bar {
-//                 width: 20px;
-//                 height: 20px;
-//             }
-//         }
-//     }
-
-//     .topnav a {
-//         font-size: 9px;
-//     }
-
-//     .topnav a.active {
-//         font-size: 20px;
-//         margin-top: -10px;
-//     }
-// }
-
-// @media only screen and (max-width: 600px) {
-//     .topnav a {
-//         font-size: 6px;
-//     }
-// }

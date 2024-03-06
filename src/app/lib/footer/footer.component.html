@@ -41,14 +41,14 @@
                 </a>
             </div>
         </div>
-        <div class="col-lg-4 col-lg-4 col-sm-4 col-xs-4" *ngIf="from == 'home'">
+        <div class="col-lg-4 col-lg-4 col-sm-12 col-xs-12" *ngIf="from == 'home' && widthScreen > 1024">
             <div class="logo-pic">
                 <video [muted]="'muted'" loop autoplay width="320" height="200" playsinline>
                     <source src="../assets/video/Bouncing_ball.mp4" type="video/mp4">
                 </video>
             </div>
         </div>
-        <div class="col-lg-4 col-lg-4 col-sm-4">
+        <div class="col-lg-4 col-lg-4 col-sm-12 col-xs-12">
             <div class="copyright">
                 <p class="copyright-text">© 11 RONIN 2024<br>
                     All Rights Reserved</p>

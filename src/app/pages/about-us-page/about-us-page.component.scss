@@ -39,67 +39,99 @@ p {
 }
 
 @media only screen and (max-width: 1024px) {
+    .about-us-content {
+        position: relative;
+        display: flex;
+
+        .about-us-container {
+            position: absolute;
+        }
+    }
+
     .about-us-text {
         font-size: 18px;
     }
 
     .content {
-        top: 27%;
+        top: 30%;
     }
 }
 
-@media only screen and (max-width: 991px),screen and (max-height: 1280px) {
-    .about-us-text {
-        font-size: 26px;
-    }
-}
 
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 992px) {
     .about-us-text {
         font-size: 15px;
     }
 }
 
-// @media only screen and (max-width: 426px) {
+@media only screen and (max-width: 800px) {
+    .about-us-text {
+        font-size: 27px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about-us-text {
+        font-size: 20px;
+    }
+}
+
+// @media only screen and (max-width: 768px),screen and (max-height: 360px) {
 //     .user-pic{
-//         margin-left: 120px;
-//     }
-//     footer {
-//         .social-logo {
-//             position: relative;
-//             display: flex;
-//             justify-content: center;
-//             margin-top: 50px;
-//         }
-
-//         .copyright{
-//             position: relative;
-//             display: flex;
-//             justify-content: center;
-//             right: -20px;
-//             margin-top: 23px;
-//         }
-
-//         .copyright-text {
-//             font-size: 12px;
-//         }
-//     }
-// }
-
-// @media only screen and (max-width: 376px) {
-//     .user-pic{
-//         margin-left: 90px;
+//         width: 100px;
+//         height: 80px;
 //     }
 //     .about-us-text {
-//         font-size: 14px;
+//         font-size: 9px;
 //     }
 // }
 
-// @media only screen and (max-width: 320px) {
-//     .user-pic{
-//         margin-left: 60px;
-//     }
-//     .about-us-text {
-//         font-size: 12px;
-//     }
-// }
+@media only screen and (max-width: 600px) {
+    .about-us-text {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .about-us-text {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .content {
+        top: 20%;
+    }
+
+    .user-pic{
+        margin-left: 90px;
+    }
+    .about-us-text {
+        font-size: 13px;
+    }
+
+    .about-us-content {
+        position: relative;
+        display: flex;
+
+        .about-us-container {
+            position: absolute;
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .user-pic{
+        margin-left: 60px;
+        width: 120px;
+        height: 100px;
+    }
+    .about-us-text {
+        font-size: 11px;
+    }
+
+    .content {
+        top: 30%;
+    }
+}

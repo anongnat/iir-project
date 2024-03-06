@@ -4,9 +4,9 @@
         <div class="row">
             <img class="user-pic" src="../assets/picture/About_Us_picture.png">
         </div>
-        <div class="row">
-            <div class="col-sm">
-                <p class="about-us-text"> 
+        <div class="row about-us-content">
+            <div class="col-sm about-us-container">
+                <p class="about-us-text" *ngIf="realWidth > 1023"> 
                     Founded in 2024 by Fatih Dogan, our studio emerges from over 13 years of rich experience<br> 
                     in the animation industry. With a background including esteemed studios such as MPC,<br>
                     Animal Logic, Method Studios,Dneg Feature, and Cinesite, Fatih Dogan envisioned a space<br> 
@@ -15,6 +15,17 @@
                     animators dedicated to delivering top-tier key frame animation for features, visual effects,<br>
                     TV, and commercials. What sets us apart is not just our expertise, but also our unwavering<br>
                     commitment to detail and quality. We take pride in every project we undertake, ensuring<br>
+                    that each frame reflects our dedication to excellence
+                </p>
+                <p class="about-us-text" *ngIf="realWidth < 1024"> 
+                    Founded in 2024 by Fatih Dogan, our studio emerges from over 13 years of rich experience 
+                    in the animation industry. With a background including esteemed studios such as MPC,
+                    Animal Logic, Method Studios,Dneg Feature, and Cinesite, Fatih Dogan envisioned a space
+                    to share his accumulated knowledge and skillset. 
+                    At our remote studio, we specialize in CG Animation, boasting a team of highly skilled
+                    animators dedicated to delivering top-tier key frame animation for features, visual effects,
+                    TV, and commercials. What sets us apart is not just our expertise, but also our unwavering
+                    commitment to detail and quality. We take pride in every project we undertake, ensuring
                     that each frame reflects our dedication to excellence
                 </p>
             </div>
