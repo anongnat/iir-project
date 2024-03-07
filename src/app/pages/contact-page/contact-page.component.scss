@@ -199,6 +199,26 @@ footer {
     }
 }
 
+@media only screen and (max-width: 376px) {
+    .content {
+        top: 15%;
+        img{
+            width: 200px;
+            height: 130px;
+            margin-bottom: 12px;
+        
+        }
+        .text-detail {
+            right: 100px;
+            font-size: 8px;
+        }
+
+        .location-name {
+            font-size: 25px;
+        }
+    }
+}
+
 @media only screen and (max-width: 320px) {
     .content {
         top: 15%;
