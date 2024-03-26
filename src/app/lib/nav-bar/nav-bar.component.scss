@@ -76,49 +76,9 @@
     background-color: transparent;
 }
 
-.condition-left {
-    -webkit-animation: tracking-in-expand 0.1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-    animation: tracking-in-expand 0.1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-}
-
-.condition-right {
-    -webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
 .conditionalOpen {
     -webkit-animation: scale-up-ver-center 0.1s steps(8, end) both;
     animation: scale-up-ver-center 0.1s steps(8, end) both;
-}
-
-@-webkit-keyframes tracking-in-expand {
-    0% {
-        letter-spacing: -0.5em;
-        opacity: 0;
-    }
-
-    40% {
-        opacity: 0.6;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes tracking-in-expand {
-    0% {
-        letter-spacing: -0.5em;
-        opacity: 0;
-    }
-
-    40% {
-        opacity: 0.6;
-    }
-
-    100% {
-        opacity: 1;
-    }
 }
 
 @-webkit-keyframes scale-up-ver-center {

@@ -1,14 +1,30 @@
 footer {
     background-color: black;
-    height: 200px;
-    margin-top: -40px;
+    position: absolute;
+    width: 100%;
+
+    &.other {
+        bottom: 23px;
+        height: 2.5rem;
+    }
+
+    &.contact {
+        bottom: 40px;
+        height: 2.5rem;
+    }
+
+    &.home {
+        height: 200px;
+        margin-top: -40px;
+    }
+
 
     .contact {
-        margin-top: 94px;
-        margin-left: 30px;
-
+        //margin-top: 94px;
+        margin-top: -25px;
         .contact-detail {
 
+            margin-left: 15px;
             .email {
                 color: white;
                 text-align: left;
@@ -27,19 +43,23 @@ footer {
         }
 
         .social-logo {
-            margin-left: -15px;
+            margin-left: 15px;
             margin-top: 0;
         }
     }
 
     .social-logo {
-        margin-top: 141px;
+        margin-top: 5px;
         margin-left: 15px;
+        &.home{
+            margin-top: 141px;
+        }
     }
 
-    .logo-pic{
+    .logo-pic {
         margin-top: -5px;
-        video{
+
+        video {
             pointer-events: none;
         }
     }
@@ -47,7 +67,14 @@ footer {
     .copyright {
         position: absolute;
         right: 30px;
-        margin-top: 122px;
+        margin-top: -12px;
+        &.home{
+            margin-top: 122px;
+        }
+
+        &.contact{
+            margin-top: 5px;
+        }
     }
 
     .copyright-text {
@@ -58,97 +85,97 @@ footer {
     }
 }
 
-@media only screen and (max-width: 1024px) {
-    footer {
-        .social-logo {
-            margin-top: 149px;
-            margin-left: 16px;
-            svg {
-                width: 19px;
-                height: 19px;
-            }
-        }
+// @media only screen and (max-width: 1024px) {
+//     footer {
+//         .social-logo {
+//             margin-top: 149px;
+//             margin-left: 16px;
+//             svg {
+//                 width: 19px;
+//                 height: 19px;
+//             }
+//         }
 
-        .copyright {
-            margin-top: 132px;
-            right: 28px;
-        }
+//         .copyright {
+//             margin-top: 132px;
+//             right: 28px;
+//         }
 
-        .copyright-text {
-            font-size: 14px;
-        }
-    }
-}
+//         .copyright-text {
+//             font-size: 14px;
+//         }
+//     }
+// }
 
-@media only screen and (max-width: 992px) {
-    footer {
-        .copyright {
-            margin-top: -40px;
-            right: 28px;
-        }
-    }
-}
+// @media only screen and (max-width: 992px) {
+//     footer {
+//         .copyright {
+//             margin-top: -40px;
+//             right: 28px;
+//         }
+//     }
+// }
 
-@media only screen and (max-width: 600px) {
-    footer {
-        .social-logo {
-            margin-top: 159px;
-            margin-left: 4px;
-            svg {
-                width: 19px;
-                height: 19px;
-            }
-        }
+// @media only screen and (max-width: 600px) {
+//     footer {
+//         .social-logo {
+//             margin-top: 159px;
+//             margin-left: 4px;
+//             svg {
+//                 width: 19px;
+//                 height: 19px;
+//             }
+//         }
 
-        .copyright {
-            margin-top: -40px;
-            right: 17px;
-        }
+//         .copyright {
+//             margin-top: -40px;
+//             right: 17px;
+//         }
 
-        .copyright-text {
-            font-size: 14px;
-        }
-    }
-}
+//         .copyright-text {
+//             font-size: 14px;
+//         }
+//     }
+// }
 
-@media only screen and (max-width: 320px) {
-    footer {
-        margin-top: -10px;
-        .social-logo {
-            margin-top: 163px;
-            svg {
-                width: 15px;
-                height: 15px;
-            }
-        }
+// @media only screen and (max-width: 320px) {
+//     footer {
+//         margin-top: -10px;
+//         .social-logo {
+//             margin-top: 163px;
+//             svg {
+//                 width: 15px;
+//                 height: 15px;
+//             }
+//         }
 
-        .copyright {
-            margin-top: -26px;
-        }
+//         .copyright {
+//             margin-top: -26px;
+//         }
 
-        .copyright-text {
-            font-size: 8px;
-        }
+//         .copyright-text {
+//             font-size: 8px;
+//         }
 
-        .contact {
-            margin-top: 94px;
-            margin-left: 30px;
-    
-            .contact-detail {
-    
-                .email {
-                    font-size: 8px;
-                }
-    
-                .website {
-                    font-size: 8px;
-                }
-            }
-    
-            .social-logo {
-                margin-left: -15px;
-                margin-top: 0;
-            }
-        }
-    }
-}
+//         .contact {
+//             margin-top: 94px;
+//             margin-left: 30px;
+
+//             .contact-detail {
+
+//                 .email {
+//                     font-size: 8px;
+//                 }
+
+//                 .website {
+//                     font-size: 8px;
+//                 }
+//             }
+
+//             .social-logo {
+//                 margin-left: -15px;
+//                 margin-top: 0;
+//             }
+//         }
+//     }
+// }

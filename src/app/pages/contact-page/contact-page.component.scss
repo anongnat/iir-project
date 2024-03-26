@@ -1,5 +1,7 @@
 .app-contact-page {
     background-color: black;
+    height: 100vh;
+    position: relative;
 }
 
 .box {
@@ -47,7 +49,8 @@
 
 .container {
     position: relative;
-    top: 20%;
+    padding-top: 180px;
+    padding-bottom: 2.5rem;
 
     &.logo-page {
         margin-top: 50px;

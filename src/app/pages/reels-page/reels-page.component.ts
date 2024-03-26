@@ -9,11 +9,11 @@ import { Component, inject } from '@angular/core';
   }
 })
 export class ReelsPageComponent {
-  heightScreen = (window.innerHeight + 24) - 185;
+  heightScreen = window.innerHeight - 205;
   constructor() {
   }
 
   onResize() {
-    this.heightScreen = (window.innerHeight + 24) - 185;
+    this.heightScreen = window.innerHeight - 205;
   }
 }

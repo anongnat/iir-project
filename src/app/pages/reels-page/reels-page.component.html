@@ -1,5 +1,5 @@
-<app-nav-bar [from]="'home-page'"></app-nav-bar>
 <div class="reel" [ngStyle]="{'height.px': heightScreen}">
+    <app-nav-bar [from]="'home-page'"></app-nav-bar>
     <div class="container content">
         <div class="frame-container">
             <video controls loop autoplay width="320" height="240" class="video-reel" playsinline>
@@ -16,5 +16,5 @@
         </div>
       </div>
     </div>
+    <app-footer [from]="'other'"></app-footer>
 </div>
-<app-footer></app-footer>

@@ -1,5 +1,6 @@
-<app-nav-bar [from]="'home-page'"></app-nav-bar>
+
 <div class="about-us"  [ngStyle]="{'height.px': heightScreen}">
+    <app-nav-bar [from]="'home-page'"></app-nav-bar>
     <div class="container content">
         <div class="row">
             <img class="user-pic" src="../assets/picture/About_Us_picture.png">
@@ -31,5 +32,6 @@
             </div>
         </div>
     </div>
+    <app-footer [from]="'other'"></app-footer>
 </div>
-<app-footer></app-footer>
+
